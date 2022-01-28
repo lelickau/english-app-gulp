@@ -1,0 +1,19 @@
+//- header
+mixin menu-item(name, url)
+    li.menu__item
+        a.munu__link(href=url)= name
+
+
+//- grammar
+mixin grammar-link(title, id, classAccent)
+    div.tenses__link(id=id class=classAccent)= title
+
+mixin grammar-list-point(text)
+    li.tense__list-point
+        img(class="tense__list-img" src="@img/list-point.svg", alt="+")
+        p.tense__list-text= text
+
+mixin grammar-list(word, example)
+    li.tense__list
+        p.tense__list-word= word
+        p.tense__list-example= example

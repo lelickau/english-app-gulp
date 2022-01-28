@@ -1,0 +1,22 @@
+include html/mixins
+- var title = "Базовая грамматика";
+html
+    include html/head
+    body
+        .wrapper
+            include html/header
+            main.main
+                .container
+                    section.tenses
+                        +grammar-link('Present Simple', 'presentSimple', 'simple')
+                        +grammar-link('Past Simple', 'pastSimple', 'simple')
+                        +grammar-link('Future Simple', 'futureSimple', 'simple')
+                        +grammar-link('Present Continuous', 'presentContinuous', 'continuous')
+                        +grammar-link('Past Continuous', 'pastContinuous', 'continuous')
+                        +grammar-link('Future Continuous', 'futureContinuous', 'continuous')
+                        +grammar-link('Present Perfect', 'presentPerfect', 'perfect')
+                        +grammar-link('Past Perfect', 'pastPerfect', 'perfect')
+                        +grammar-link('Future Perfect', 'futurePerfect', 'perfect')
+                    include html/grammar/presentSimple
+            include html/footer
+            script(src='js/app.min.js')

@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $text;
+    @extend %box-shadow;
+}
+
+.menu {
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 66px;
+    margin-right: 66px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @extend %title-font;
+        color: $bg-accent;
+    }
+
+    &__item + &__item {
+        margin-left: 66px;
+    }
+
+    &__link {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,58 @@
+@import './_variables';
+
+// firefox
+html, body {
+    scrollbar-color: $text #b1b1b1;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto thin none;  /* толщина */
+}
+
+// webkit
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #b1b1b1;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: $text;
+    border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5c5c5c;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: $text;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: $text;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: $text;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #fff 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #fff 30%, rgba(0, 0, 0, 0) 31%);
+    //background-color: #f6f8f4;
+}

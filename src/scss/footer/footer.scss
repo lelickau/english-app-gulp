@@ -1,0 +1,17 @@
+@import '../_variables';
+
+.footer {
+    height: 45px;
+    background-color: $text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %box-shadow;
+
+    &__copyright {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $bg-accent;
+    }
+}

@@ -1,0 +1,41 @@
+//- tense__hidden
+section.tense.tense__hidden(data-tense-id="presentSimple")
+    button.tense__arrow-prev
+        img(class="tense__arrow-prev-img", src="@img/arrow-prev.svg", alt="prev")
+    section.tense__wrapper
+        .tense__header
+            h4.tense__header-title Present Simple
+            .tense__progress
+                .tense__dot
+                    .tense__dot-text 1
+                    img(class="tense__dot-img-hidden" src="@img/done.svg", alt="Done")
+                .tense__dot-progress-line
+                .tense__dot
+                    .tense__dot-text 2
+                    img(class="tense__dot-img-hidden" src="@img/done.svg", alt="Done")
+                .tense__dot-progress-line
+                .tense__dot
+                    .tense__dot-text 3
+                    img(class="tense__dot-img-hidden" src="@img/done.svg", alt="Done")
+                .tense__dot-progress-line
+                .tense__dot
+                    .tense__dot-text 4
+                    img(class="tense__dot-img-hidden" src="@img/done.svg", alt="Done")
+                .tense__dot-progress-line
+                .tense__dot
+                    .tense__dot-text 5
+                    img(class="tense__dot-img-hidden" src="@img/done.svg", alt="Done")
+            button.tense__header-close
+                img(src="@img/close-btn.svg", alt="Close")
+        article.tense__content
+            .tense__slider
+                include present-simple-components/tense-slide-1
+                include present-simple-components/tense-slide-2
+                include present-simple-components/tense-slide-3
+                include present-simple-components/tense-slide-4
+                include present-simple-components/tense-slide-5
+            .tense__list-btn
+                button.tense__list-done Освоено
+            .tense__footer.hidden
+    button.tense__arrow-next
+        img(class="tense__arrow-next-img", src="@img/arrow-next.svg", alt="next")

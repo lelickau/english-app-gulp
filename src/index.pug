@@ -1,0 +1,13 @@
+include html/mixins
+- var title = "Главная";
+html
+    include html/head
+    body
+        .wrapper
+            include html/header
+            main.main
+                .container
+                    h1= title
+                    
+            include html/footer
+            script(src='js/app.min.js')
