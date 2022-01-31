@@ -54,3 +54,14 @@ a {
 @import './footer/footer.scss';
 @import './grammar/grammar.scss';
 @import './grammar/tense.scss';
+@import './training/training.scss';
+@import './training/quiz.scss';
+
+
+@media (max-height: 720px) {
+    .main {
+        padding-top: 120px;
+        padding-bottom: 27px;
+    }
+}
+

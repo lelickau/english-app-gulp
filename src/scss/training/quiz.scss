@@ -1,0 +1,106 @@
+@import '../variables';
+
+.quiz-test{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 37px;
+    @extend %box-shadow;
+    background-color: #fff;
+    &__hidden{
+        display: none;
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__decore {
+        margin-top: -37px;
+        margin-left: -37px;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    &__content-descr {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+    }
+
+    &__ico-descr {
+        margin-right: 12px;
+    }
+
+    &__btn-start {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 76px;
+        @extend %reset-button-style;
+        @extend %botton-style;
+    }
+
+    &__description--hidden {
+        display: none;
+    }
+
+    &__item-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    &__console {
+        display: flex;
+        align-items: center;
+    }
+
+    &__console-ico {
+        width: 55px;
+        height: 55px;
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    &__item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    &__word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %title-font;
+    }
+
+    &__options {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+    &__btn {
+        @extend %reset-button-style;
+        @extend %botton-style;
+    }
+
+    &__hint {
+        background: #EEFFED;
+        border: 2px solid #BAEBB9;
+    }
+
+    &__hint--hidden {
+        display: none;
+    }
+}

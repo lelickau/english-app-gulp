@@ -3,10 +3,11 @@ include html/mixins
 html
     include html/head
     body
-        include html/header
-        main.page
-            .container
-                h1= title
-                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti harum tempora totam vitae ex blanditiis quibusdam perspiciatis aspernatur nemo. Dolorum?
+        .wrapper
+            include html/header
+            main.main
+                .container
+                    h1= title
+
             include html/footer
             script(src='js/app.min.js')

@@ -3,9 +3,22 @@ include html/mixins
 html
     include html/head
     body
-        include html/header
-        main.page
-            .container
+        .wrapper
+            include html/header
+            main.main
+                .container
+                    section.training.training__hidden
+                        article.training__item.quiz
+                            img(class="training__item-img" src="@img/quiz.svg", alt="`Quiz")
+                            h3.training__item-title Викторина
+                        article.training__item
+                            img(class="training__item-img" src="@img/believe-game.svg", alt="Believe or not believe")
+                            h3.training__item-title Верю - Не верю
+                        article.training__item
+                            img(class="training__item-img" src="", alt="")
+                            h3.training__item-title Конструктор
+                    include html/training/quiz/quiz-test
 
-    include html/footer
+
+            include html/footer
     script(src='js/app.min.js')

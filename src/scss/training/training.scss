@@ -1,0 +1,32 @@
+@import '../variables';
+
+.training {
+    height: 100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    &__hidden {
+        display: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        background: #EDF3FF;
+        border: 2px solid #0452D8;
+        box-sizing: border-box;
+        border-radius: 2px;
+        height: 168px;
+    }
+
+    &__item-title {
+        @extend %title-font;
+    }
+}
