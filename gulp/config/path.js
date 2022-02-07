@@ -1,14 +1,18 @@
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
+const buildServerFolder = './public/assets';
 const buildFolder = './dist';
 const srcFolder = './src';
 
 export const path = {
     build: {
         js: `${buildFolder}/js`,
+        serverJs: `${buildServerFolder}/js`,
         images: `${buildFolder}/images`,
+        serverImages: `${buildServerFolder}/images`,
         css: `${buildFolder}/css`,
+        serverCss: `${buildServerFolder}/css`,
         html: `${buildFolder}/`,
         fonts: `${buildFolder}/fonts/`,
         files: `${buildFolder}/files/`,
@@ -31,6 +35,7 @@ export const path = {
         files: `${srcFolder}/files/**/*.*`,
     },
     clean: buildFolder,
+    cleanServer: buildServerFolder,
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,

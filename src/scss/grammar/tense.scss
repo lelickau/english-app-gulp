@@ -1,4 +1,6 @@
 @import '../_variables';
+@import '../_variables';
+@import '../_variables';
 
 .tense {
     display: flex;
@@ -33,7 +35,7 @@
     }
 
     &__footer {
-        height: 60px;
+        height: 20px;
     }
 
     &__header {

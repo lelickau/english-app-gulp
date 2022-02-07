@@ -42,7 +42,7 @@ export const scss = () => {
                     cascade: true
                 })
         ))
-        //.pipe(app.gulp.dest(app.path.build.css)) // if needed uncompressed file
+        .pipe(app.gulp.dest(app.path.build.css)) // if needed uncompressed file
         .pipe(
             app.plugins.if(
                 app.isBuild,
@@ -52,5 +52,6 @@ export const scss = () => {
             extname: ".min.css"
         }))
         .pipe(app.gulp.dest(app.path.build.css))
+        .pipe(app.gulp.dest(app.path.build.serverCss))
         .pipe(app.plugins.browsersync.stream())
 }
