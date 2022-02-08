@@ -1,0 +1,60 @@
+@import '../variables';
+
+.cards {
+    &__title {
+        position: relative;
+        padding: 9px 9px 9px 80px;
+        @extend %title-font;
+        @extend %box-shadow;
+        background-color: #fff;
+        border-radius: 2px;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            background-color: #F67463;
+            width: 60px;
+            height: 100%;
+        }
+    }
+
+    &__topics {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__topics-item {
+        cursor: pointer;
+        position: relative;
+        width: 270px;
+        height: 205px;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        @extend %box-shadow;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            right: -15px;
+            top: -15px;
+            border: 6px solid #FFDBD7;
+            background-color: #F67463;
+            z-index: -1;
+        }
+    }
+
+    &__topics-item-title {
+        margin-top: 10px;
+        @extend %text-font;
+    }
+}
