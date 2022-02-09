@@ -2,16 +2,16 @@
 
 .footer {
     height: 45px;
-    background-color: $text;
+    background-color: $box;
     display: flex;
     align-items: center;
     justify-content: center;
-    @extend %box-shadow;
+    @extend %box-border-shadow;
 
     &__copyright {
         font-size: 14px;
         line-height: 20px;
         font-weight: 400;
-        color: $bg-accent;
+        color: $text;
     }
 }

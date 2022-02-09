@@ -4,7 +4,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 37px;
-    @extend %box-shadow;
+    @extend %box-border-shadow;
     background-color: #fff;
     &__hidden{
         display: none;
@@ -42,8 +42,7 @@
         display: flex;
         margin: 0 auto;
         margin-top: 76px;
-        @extend %reset-button-style;
-        @extend %botton-style;
+        @extend %default-btn;
     }
 
     &__description--hidden {
@@ -91,8 +90,7 @@
         column-gap: 30px;
     }
     &__btn {
-        @extend %reset-button-style;
-        @extend %botton-style;
+        @extend %default-btn;
     }
 
     &__hint {

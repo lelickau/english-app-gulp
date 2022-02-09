@@ -1,6 +1,8 @@
-/*theme white-balck*/
+// +
 $text: #222831;
-$accent-color: #fff;
+$box: #fff;
+
+//-
 $bg-main: #F5F5F5;
 $bg-accent: #F9F9F9;
 
@@ -8,45 +10,65 @@ $color-positive: #0BC371;
 $color-neutral: #5091F9;
 $color-negative: #F67463;
 
+//+
+$bright_1: #26C1FC; // blue
+$pastel_1: #DDF5FF; // pastel blue
+
+$bright_2: #BF8FFD; // violet
+$pastel_2: #F2EAFF; // pastel violet
+
+$bright_3: #F5A72B; // orange
+$pastel_3: #FFEBCB; // pastel orange
+
+$bright_4: #FD8BD0; // respberry
+$pastel_4: #FFF2F9; // pastel respberry
+
+//+
 %title-font{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 800;
+}
+
+//+
+%subtitle-font {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+//+
+%text-font {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+//+
+%box-border-shadow {
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+}
+
+//+
+%default-btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    padding: 16px 38px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
 }
 
-%subtitle-font {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 500;
+%box-shadow-btn {
+
 }
 
-%text-font {
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 500;
-}
-
-%box-shadow {
-    -webkit-box-shadow: 0px 0px 4px rgba(220, 220, 220, 0.25);
-    -moz-box-shadow: 0px 0px 4px rgba(220, 220, 220, 0.25);
-    box-shadow: 0px 0px 4px rgba(220, 220, 220, 0.25);
-}
-
-%reset-button-style {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-%botton-style {
-    background: linear-gradient(180deg, #0D62FC 0%, #3E84FD 100%);
-    border: 2px solid #94B9FA;
-    border-radius: 4px;
-    padding: 13px 30px;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    color: $accent-color;
-}
 
 /**/

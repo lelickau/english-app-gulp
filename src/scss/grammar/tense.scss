@@ -14,7 +14,7 @@
     &__arrow-prev,
     &__arrow-next {
         border-radius: 50%;
-        @extend %reset-button-style;
+        @extend %default-btn;
         max-width: 55px;
         max-height: 55px;
     }
@@ -29,7 +29,7 @@
     }
 
     &__content {
-        background-color: $accent-color;
+        background-color: $box;
         padding: 68px 84px;
         overflow-y: scroll;
     }
@@ -63,7 +63,7 @@
         width: 26px;
         height: 26px;
         margin-right: 30px;
-        @extend %reset-button-style;
+        @extend %default-btn;
     }
 
     &__progress {
@@ -102,7 +102,7 @@
     }
 
     &__dot-text--active {
-        color: $accent-color;
+        color: $box;
     }
 
     &__dot-text--hidden {
@@ -139,7 +139,7 @@
     &__list-done {
         cursor: pointer;
         margin-top: 20px;
-        @extend %botton-style;
+        @extend %default-btn;
     }
 
     // mixin grammar-list-point style

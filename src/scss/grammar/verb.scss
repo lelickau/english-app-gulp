@@ -1,0 +1,24 @@
+@import '../variables';
+
+.verb {
+    width: 685px;
+    width: calc(1/2*100% - 30px);
+    padding: 24px;
+    margin: 15px;
+
+    @extend %box-border-shadow;
+    &__title {
+        padding: 12px;
+        background-color: $box;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    &__text {
+        @extend %text-font;
+        font-weight: 600;
+        color: $box;
+    }
+}

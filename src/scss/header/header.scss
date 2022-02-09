@@ -2,21 +2,19 @@
 
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 5px;
+    left: 5px;
+    right: 5px;
     z-index: 100;
-    background-color: $text;
-    @extend %box-shadow;
+    background-color: $box;
+    @extend %box-border-shadow;
 }
 
 .menu {
-    height: 93px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 66px;
-    margin-right: 66px;
 
     &__list {
         display: flex;
@@ -26,7 +24,7 @@
 
     &__item {
         @extend %title-font;
-        color: $bg-accent;
+        color: $text;
     }
 
     &__item + &__item {

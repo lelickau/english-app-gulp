@@ -5,7 +5,7 @@
         position: relative;
         padding: 9px 9px 9px 80px;
         @extend %title-font;
-        @extend %box-shadow;
+        @extend %box-border-shadow ;
         background-color: #fff;
         border-radius: 2px;
         &::after {
@@ -38,7 +38,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: #fff;
-        @extend %box-shadow;
+        @extend %box-border-shadow ;
 
         &::after {
             position: absolute;

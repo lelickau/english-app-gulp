@@ -1,5 +1,6 @@
 @import 'scroll';
 @import 'fonts';
+@import 'variables';
 
 * {
     box-sizing: border-box;
@@ -13,9 +14,9 @@ body {
 }
 
 body {
-    font-family: SourceCodePro;
-    color: #222831;
-    background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    color: $text;
+    @extend %text-font;
 }
 
 a {
@@ -23,9 +24,12 @@ a {
 }
 
 .wrapper {
+    position: relative;
+    padding: 5px;
+    background-color: $pastel_4;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 
 .header {
@@ -34,8 +38,8 @@ a {
 
 .main {
     flex: 1 0 auto;
-    padding-top: 153px;
-    padding-bottom: 60px;
+    padding-top: 135px;
+    padding-bottom: 65px;
 }
 
 .footer {
@@ -43,19 +47,40 @@ a {
 }
 
 .container {
-    max-width: 1620px;
+    max-width: 1460px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
 }
 
+.title {
+    @extend %title-font;
+}
+
+.accent_1 {
+    background-color: $bright_1;
+}
+.accent_2 {
+    background-color: $bright_2;
+}
+.accent_3 {
+    background-color: $bright_3;
+}
+.accent_4 {
+    background-color: $bright_4;
+}
+
 @import 'reset.scss';
 @import './header/header.scss';
 @import './footer/footer.scss';
+// grammar
 @import './grammar/grammar.scss';
 @import './grammar/tense.scss';
+@import './grammar/verb.scss';
+// training
 @import './training/training.scss';
 @import './training/quiz.scss';
+// cards
 @import './cards/cards.scss';
 
 
