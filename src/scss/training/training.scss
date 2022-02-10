@@ -1,10 +1,15 @@
 @import '../variables';
 
+.wrapper__training {
+    background-color: $pastel_2;
+}
+
 .training {
     height: 100%;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 260px);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -14,19 +19,34 @@
     }
 
     &__item {
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         cursor: pointer;
-        background: #EDF3FF;
-        border: 2px solid #0452D8;
-        box-sizing: border-box;
-        border-radius: 2px;
-        height: 168px;
+        background-color: $bright_2;
+        padding: 30px;
+        @extend %box-border-shadow;
     }
 
-    &__item-title {
+    &__ico {
+        max-width: 169px;
+        max-height: 80px;
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        padding: 9px;
+        border-radius: 8px;
+        background-color: $box;
         @extend %title-font;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        color: $box;
+        text-align: center;
     }
 }

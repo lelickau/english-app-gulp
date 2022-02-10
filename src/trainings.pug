@@ -3,20 +3,23 @@ include html/mixins
 html
     include html/head
     body
-        .wrapper
+        .wrapper.wrapper__training
             include html/header
             main.main
                 .container
-                    section.training
+                    section.training.training__hidden
                         article.training__item.quiz
-                            img(class="training__item-img" src="@img/quiz.svg", alt="`Quiz")
-                            h3.training__item-title Викторина
+                            img(class="training__ico" src="@img/quiz.svg", alt="`Quiz")
+                            h3.training__title Викторина
+                            p.training__description Выбери правильный вариант ответа из четырех предложенных
                         article.training__item
-                            img(class="training__item-img" src="@img/believe-game.svg", alt="Believe or not believe")
-                            h3.training__item-title Верю - Не верю
+                            img(class="training__ico" src="@img/believe-game.svg", alt="Believe or not believe")
+                            h3.training__title Верю - Не верю
+                            p.training__description Определи верно или не верно подобран перевод к слову
                         article.training__item
-                            img(class="training__item-img" src="", alt="")
-                            h3.training__item-title Конструктор
+                            img(class="training__ico" src="@img/constructor.svg", alt="Constructor")
+                            h3.training__title Конструктор
+                            p.training__description Составь слово из разбросанных букв
                     include html/training/quiz/quiz-test
 
 

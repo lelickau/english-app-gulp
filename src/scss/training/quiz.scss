@@ -3,29 +3,34 @@
 .quiz-test{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 37px;
     @extend %box-border-shadow;
-    background-color: #fff;
-    &__hidden{
-        display: none;
-    }
+    background-color: $box;
+    padding-bottom: 47px;
 
     &__header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        padding: 20px;
     }
 
-    &__decore {
-        margin-top: -37px;
-        margin-left: -37px;
+    &__close {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
     }
 
     &__description {
+        background-color: $pastel_2;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 50px;
+    }
+
+    &__title-descr {
+        @extend %title-font;
+        margin-bottom: 15px;
     }
 
     &__content-descr {
@@ -39,30 +44,42 @@
     }
 
     &__btn-start {
-        display: flex;
         margin: 0 auto;
         margin-top: 76px;
         @extend %default-btn;
+        background-color: $bright_2;
+        color: $box;
+        @extend %shadow-btn_2;
     }
 
-    &__description--hidden {
-        display: none;
+    //
+    &__item {
+        padding-top: 60px;
+        padding-bottom: 78px;
+        background-color: $pastel_2;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     &__item-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
+        width: 890px;
+        margin: 0 auto;
+        padding: 22px;
+        background-color: $box;
+        @extend %box-border-shadow;
     }
 
     &__console {
+        padding: 21px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        background-color: $pastel_2;
+        border-radius: 8px;
     }
 
     &__console-ico {
+        cursor: pointer;
         width: 55px;
         height: 55px;
         &:first-child {
@@ -70,16 +87,12 @@
         }
     }
 
-    &__item {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
     &__word {
         display: flex;
         align-items: center;
         justify-content: center;
         @extend %title-font;
+        text-transform: uppercase;
     }
 
     &__options {
@@ -89,43 +102,59 @@
         row-gap: 20px;
         column-gap: 30px;
     }
+
     &__btn {
         @extend %default-btn;
+        background-color: $bright_2;
+        color: $box;
+        @extend %shadow-btn_2;
     }
+    //
 
     &__hint {
         background: #EEFFED;
         border: 2px solid #BAEBB9;
     }
 
-    &__hint--hidden {
-        display: none;
-    }
-
     &__results {
+        width: 290px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 9px;
-        padding-bottom: 100px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $bright_2;
+        @extend %box-border-shadow;
     }
 
     &__points {
+        width: 100%;
+        padding: 17px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 110px;
-        height: 110px;
-        background-color: #F9F9F9;
+        border-radius: 8px;
+        background-color: $box;
         margin-bottom: 27px;
     }
 
     &__point-num {
-        font-size: 22px;
-        line-height: 28px;
-        font-weight: 500;
+        @extend %title-font;
         margin-bottom: 5px;
+        color: $bright_2;
+    }
+
+    &__point-text {
+        color: $box;
+        text-align: center;
+    }
+
+    &__hidden{
+        display: none;
     }
 }
+

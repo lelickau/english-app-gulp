@@ -2,7 +2,7 @@
     {
         "id": "bacon",
         "translate": "бекон",
-        "mp3": "",
+        "mp3": "ssl.gstatic.com/dictionary/static/sounds/20200429/bacon--_gb_1.mp3",
         "thema": "meat"
     },
     {
@@ -253,7 +253,7 @@
     },
     {
         "id": "chard",
-        "translate": "мангольд, листовая свекла",
+        "translate": "листовая свекла",
         "mp3": "",
         "thema": "vegetables"
     },
@@ -343,7 +343,7 @@
     },
     {
         "id": "sweet potato",
-        "translate": "батат, сладкий картофель",
+        "translate": "батат",
         "mp3": "",
         "thema": "vegetables"
     },

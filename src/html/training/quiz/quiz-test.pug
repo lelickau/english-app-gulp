@@ -1,12 +1,14 @@
-//- .quiz-test__hidden
-section.training__test.training__hidden.quiz-test
+//- .training__hidden
+section.training__test.quiz-test
     .quiz-test__header
-        .quiz-test__progress
-            img.quiz-test__decore(src="@img/angle-decore.svg", alt="Decore")
+        img.quiz-test__logo(src="@img/quiz_2.svg", alt="Quiz")
+        .progress
+            .progress__points.progress__hidden 0
+
+
         .quiz-test__close
             img(src="@img/close-btn.svg", alt="Close")
     .quiz-test__description
-        img.quiz-test__logo(src="@img/quiz.svg", alt="Quiz")
         .quiz-test__content-descr
             img.quiz-test__ico-descr(src="@img/question.svg", alt="Description")
             .quiz-test__text-descr
@@ -14,5 +16,5 @@ section.training__test.training__hidden.quiz-test
                 .quiz-test__text Выбери правельный перевод слова из четырех вариантов ответов
         button.quiz-test__btn-start Начать
     .quiz-test__questions-box
-    
+
 

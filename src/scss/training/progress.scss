@@ -1,0 +1,58 @@
+@import '../variables';
+
+.progress {
+    display: flex;
+    align-items: center;
+
+    &__points {
+        width: 80px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $bright_2;
+        color: $bright_2;
+        border-radius: 11px;
+        margin-right: 21px;
+    }
+
+    &__bar {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        width: 15px;
+        height: 13px;
+        background-color: #EDF2FC;
+    }
+
+    &__item + &__item {
+        margin-left: 2px;
+    }
+
+    &__item-start {
+        background-color: #E2D0FA;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    &__item-end {
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    &__item--active {
+        background-color: #E2D0FA;
+    }
+
+    &__item--done {
+        background-color: $bright_2;
+    }
+
+    &__item--error {
+        background-color: #F67463;
+    }
+
+    &__hidden {
+        display: none;
+    }
+}
