@@ -2,14 +2,6 @@
 $text: #222831;
 $box: #fff;
 
-//-
-$bg-main: #F5F5F5;
-$bg-accent: #F9F9F9;
-
-$color-positive: #0BC371;
-$color-neutral: #5091F9;
-$color-negative: #F67463;
-
 //+
 $bright_1: #26C1FC; // blue
 $pastel_1: #DDF5FF; // pastel blue
@@ -24,36 +16,35 @@ $bright_4: #FD8BD0; // respberry
 $pastel_4: #FFF2F9; // pastel respberry
 
 //+
-%title-font{
+@mixin title-font{
     font-size: 22px;
     line-height: 26px;
     font-weight: 800;
 }
 
 //+
-%subtitle-font {
+@mixin subtitle-font {
     font-size: 20px;
     line-height: 25px;
     font-weight: 700;
 }
 
 //+
-%text-font {
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-//+
-%box-border-shadow {
+@mixin box-border-shadow {
     border-radius: 8px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
 }
 
+@mixin box-shadow-svg {
+    -webkit-box-shadow: 0px 2px 8px rgba(136, 136, 136, 0.25);
+    -moz-box-shadow: 0px 2px 8px rgba(136, 136, 136, 0.25);
+    box-shadow: 0px 2px 8px rgba(136, 136, 136, 0.25);
+}
+
 //+
-%default-btn {
+@mixin default-btn {
     border: none;
     cursor: pointer;
     display: flex;
@@ -65,8 +56,28 @@ $pastel_4: #FFF2F9; // pastel respberry
     line-height: 26px;
     font-weight: 700;
 }
+//
+@mixin wrapper-top {
+    z-index: 101;
+    position: fixed;
+    content: '';
+    height: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
-%shadow-btn_2 {
+@mixin shadow-btn_1 {
+    box-shadow: 0px 5px 0px #259BC8;
+    transition: .5s;
+
+    &:hover {
+        background-color: #259BC8;
+        box-shadow: 2px 5px 0px #63bde0;
+    }
+}
+
+@mixin shadow-btn_2 {
     box-shadow: 0px 5px 0px #A17AD3;
     transition: .5s;
 

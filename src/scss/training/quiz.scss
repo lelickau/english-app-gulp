@@ -3,7 +3,7 @@
 .quiz{
     max-width: 1280px;
     margin: 0 auto;
-    @extend %box-border-shadow;
+    @include box-border-shadow;
     background-color: $box;
     padding-bottom: 47px;
 
@@ -29,7 +29,7 @@
     }
 
     &__title-descr {
-        @extend %title-font;
+        @include title-font;
         margin-bottom: 15px;
     }
 
@@ -46,10 +46,10 @@
     &__btn-start {
         margin: 0 auto;
         margin-top: 76px;
-        @extend %default-btn;
+        @include default-btn;
         background-color: $bright_2;
         color: $box;
-        @extend %shadow-btn_2;
+        @include shadow-btn_2;
     }
 
     //
@@ -66,7 +66,7 @@
         margin: 0 auto;
         padding: 22px;
         background-color: $box;
-        @extend %box-border-shadow;
+        @include box-border-shadow;
     }
 
     &__console {
@@ -91,7 +91,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @extend %title-font;
+        @include title-font;
         text-transform: uppercase;
     }
 
@@ -104,10 +104,10 @@
     }
 
     &__btn {
-        @extend %default-btn;
+        @include default-btn;
         background-color: $bright_2;
         color: $box;
-        @extend %shadow-btn_2;
+        @include shadow-btn_2;
     }
 
     //

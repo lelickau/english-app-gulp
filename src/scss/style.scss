@@ -1,6 +1,6 @@
-@import 'scroll';
-@import 'fonts';
 @import 'variables';
+@import 'fonts';
+@import 'scroll';
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,9 @@ body {
 body {
     font-family: 'Montserrat', sans-serif;
     color: $text;
-    @extend %text-font;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
 }
 
 a {
@@ -30,6 +32,11 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    &::after {
+        @include wrapper-top;
+        background-color: $pastel_4;
+    }
 }
 
 .header {
@@ -54,7 +61,7 @@ a {
 }
 
 .title {
-    @extend %title-font;
+    @include title-font;
 }
 
 .accent_1 {

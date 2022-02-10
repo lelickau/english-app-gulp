@@ -5,8 +5,8 @@
     width: calc(1/2*100% - 30px);
     padding: 24px;
     margin: 15px;
-
-    @extend %box-border-shadow;
+    @include box-border-shadow;
+    
     &__title {
         padding: 12px;
         background-color: $box;
@@ -17,7 +17,6 @@
     }
 
     &__text {
-        @extend %text-font;
         font-weight: 600;
         color: $box;
     }

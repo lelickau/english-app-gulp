@@ -2,6 +2,11 @@
 
 .wrapper__training {
     background-color: $pastel_2;
+
+    &::after {
+        @include wrapper-top;
+        background-color: $pastel_2;
+    }
 }
 
 .training {
@@ -26,7 +31,7 @@
         cursor: pointer;
         background-color: $bright_2;
         padding: 30px;
-        @extend %box-border-shadow;
+        @include box-border-shadow;
     }
 
     &__ico {
@@ -40,7 +45,7 @@
         padding: 9px;
         border-radius: 8px;
         background-color: $box;
-        @extend %title-font;
+        @include title-font;
         margin-top: 30px;
         margin-bottom: 20px;
     }

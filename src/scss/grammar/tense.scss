@@ -1,77 +1,88 @@
 @import '../_variables';
-@import '../_variables';
-@import '../_variables';
+
+.wrapper {
+    &__tense {
+        background-color: $pastel_1;
+
+        &::after {
+            @include wrapper-top;
+            background-color: $pastel_1;
+        }
+    }
+}
 
 .tense {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__hidden {
-        display: none;
-    }
-
     &__arrow-prev,
     &__arrow-next {
+        cursor: pointer;
+        @include box-shadow-svg;
         border-radius: 50%;
-        @extend %default-btn;
-        max-width: 55px;
-        max-height: 55px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__arrow-prev-img,
+    &__arrow-next-img {
+        width: 55px;
+        height: 55px;
     }
 
     &__wrapper {
         position: relative;
         flex: 1;
-        box-shadow: 0px 0px 4px #99B1F9;
-        border-radius: 2px;
+        @include box-border-shadow;
         margin-left: 25px;
         margin-right: 25px;
     }
 
     &__content {
-        background-color: $box;
-        padding: 68px 84px;
+        background-color: $pastel_1;
+        padding: 68px 80px;
         overflow-y: scroll;
-    }
-
-    &__footer {
-        height: 20px;
     }
 
     &__header {
         position: absolute;
-        top: 0;
+        top: -5px;
         left: 0;
         right: 0;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 16px;
         display: flex;
         justify-content: space-between;
-        background-color: $bg-accent;
+        background-color: $box;
     }
 
     &__header-title {
-        position: absolute;
         color: $text;
         font-weight: 300;
         font-size: 16px;
         line-height: 25px;
-        margin-left: 30px;
+        margin-right: 30px;
     }
 
     &__header-close {
         width: 26px;
         height: 26px;
-        margin-right: 30px;
-        @extend %default-btn;
+        cursor: pointer;
     }
 
+    //
+
     &__progress {
-        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    &__dots {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 56px;
     }
 
     &__dot {
@@ -81,65 +92,58 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background-color: #F5F5F5;
-        border: 2px solid #99B1F9;
+        background-color: $pastel_1;
+        border: 2px solid $bright_1;
     }
 
-    &__dot-text {
-        color: $text;
-        font-size: 18px;
-        line-height: 23px;
-        font-weight: 300;
+    &__dot--active {
+        background-color: $bright_1;
+    }
+
+    &__dot-progress-line {
+        height: 3px;
+        width: 25px;
+        background-color: $bright_1;
     }
 
     &__dot-img-hidden {
         display: none;
     }
 
-    &__dot--active {
-        background-color: #99B1F9;
-        border: 2px solid #728FFC;
-    }
-
-    &__dot-text--active {
-        color: $box;
-    }
-
-    &__dot-text--hidden {
-        display: none;
-    }
-
-    &__dot-progress-line {
-        height: 3px;
-        width: 25px;
-        background-color: #99B1F9;
-    }
-
+    //
     &__main-title {
-        @extend %subtitle-font;
-        color: $text;
+        padding: 14px 30px;
+        @include subtitle-font;
+        border-radius: 8px;
+        color: $box;
+        background-color: $bright_1;
         margin-bottom: 25px;
         text-align: center;
     }
 
     &__list-title {
-        @extend %subtitle-font;
+        @include subtitle-font;
         color: $text;
         margin-bottom: 32px;
     }
 
     &__list-btn {
-        width: 100%;
-        margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     &__list-done {
+        background-color: $bright_1;
+        color: $box;
         cursor: pointer;
         margin-top: 20px;
-        @extend %default-btn;
+        @include default-btn;
+        @include shadow-btn_1;
+    }
+
+    &__list-done--hidden {
+        display: none;
     }
 
     // mixin grammar-list-point style
@@ -155,7 +159,6 @@
 
     &__list-text {
         margin-left: 17px;
-        @extend %text-font;
     }
 
     &__list-point:last-child {
@@ -164,7 +167,7 @@
 
     // mixin grammar-list style
     &__list-word {
-        @extend %subtitle-font;
+        @include subtitle-font;
     }
 
     &__list + &__list {
@@ -179,8 +182,8 @@
     }
 
     &__explanations-img {
-        width: 21px;
-        height: 21px;
+        width: 33px;
+        height: 33px;
         margin-right: 6px;
     }
 
@@ -191,6 +194,9 @@
     }
 
     &__scheme {
+        background-color: $bright_1;
+        border-radius: 8px;
+        padding: 24px 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -199,14 +205,14 @@
     }
 
     &__scheme-img {
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         margin-right: 30px;
     }
 
     &__verb-img {
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
     }
 
     &__scheme-subjects {
@@ -215,6 +221,10 @@
         justify-content: center;
         align-items: center;
         margin-right: 30px;
+    }
+    &__subjects-item,
+    &__words {
+        color: $box;
     }
 
     &__scheme-arrow {
@@ -229,14 +239,25 @@
     }
 
     &__examples {
-        background: #EEFFED;
-        border: 2px solid #BAEBB9;
-        padding: 15px;
+        background-color: $box;
+        border-radius: 8px;
+        padding: 24px 30px;
         display: flex;
         flex-direction: column;
     }
 
     &__examples-item {
         margin-bottom: 6px;
+    }
+
+    &__footer {
+        background-color: $box;
+        height: 20px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    &__hidden {
+        display: none;
     }
 }

@@ -11,7 +11,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: $bright_2;
-    @extend %box-border-shadow;
+    @include box-border-shadow;
 
     &__points {
         width: 100%;
@@ -26,7 +26,7 @@
     }
 
     &__point-num {
-        @extend %title-font;
+        @include title-font;
         margin-bottom: 5px;
         color: $bright_2;
     }
