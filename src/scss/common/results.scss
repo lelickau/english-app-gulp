@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.results {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: $bright_2;
+    @extend %box-border-shadow;
+
+    &__points {
+        width: 100%;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background-color: $box;
+        margin-bottom: 27px;
+    }
+
+    &__point-num {
+        @extend %title-font;
+        margin-bottom: 5px;
+        color: $bright_2;
+    }
+
+    &__point-text {
+        color: $box;
+        text-align: center;
+    }
+}

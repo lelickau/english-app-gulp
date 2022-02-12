@@ -1,0 +1,488 @@
+[
+    {
+        "id": "bacon",
+        "translate": "бекон",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/bacon--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "crisp rashers of bacon",
+        "definitions": "cured meat from the back or sides of a pig."
+    },
+    {
+        "id": "beef",
+        "translate": "говядина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/beef--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "there was the smell of roast beef",
+        "definitions": "the flesh of a cow, bull, or ox, used as food."
+    },
+    {
+        "id": "chicken",
+        "translate": "курица",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/chicken--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "rationing was still in force and most people kept chickens",
+        "definitions": "a domestic fowl kept for its eggs or meat, especially a young one."
+    },
+    {
+        "id": "duck",
+        "translate": "утка",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/duck--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a waterbird with a broad blunt bill, short legs, webbed feet, and a waddling gait."
+    },
+    {
+        "id": "ham",
+        "translate": "ветчина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/ham--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "thin slices of ham",
+        "definitions": "salted or smoked meat from the upper part of a pig's leg."
+    },
+    {
+        "id": "lamb",
+        "translate": "мясо ягненка",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/lamb--1_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a young sheep."
+    },
+    {
+        "id": "liver",
+        "translate": "печень",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/liver--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "cholesterol may accumulate in the liver",
+        "definitions": "a large lobed glandular organ in the abdomen of vertebrates, involved in many metabolic processes."
+    },
+    {
+        "id": "meat",
+        "translate": "мясо",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/meat--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "pieces of meat",
+        "definitions": "the flesh of an animal, typically a mammal or bird, as food (the flesh of domestic fowls is sometimes distinguished as poultry )."
+    },
+    {
+        "id": "mutton",
+        "translate": "баранина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/mutton--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "a leg of mutton",
+        "definitions": "the flesh of fully grown sheep used as food."
+    },
+    {
+        "id": "pork",
+        "translate": "свинина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pork--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "roast pork",
+        "definitions": "the flesh of a pig used as food, especially when uncured."
+    },
+    {
+        "id": "poultry",
+        "translate": "птица, дичь",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/poultry--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "domestic fowl, such as chickens, turkeys, ducks, and geese."
+    },
+    {
+        "id": "sausage",
+        "translate": "сосиска",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/sausage--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "an item of food in the form of a cylindrical length of minced pork or other meat encased in a skin, typically sold raw to be grilled or fried before eating."
+    },
+    {
+        "id": "tenderloin",
+        "translate": "филе, вырезка",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/tenderloin--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "grilled pork tenderloin",
+        "definitions": "the tenderest part of a loin of beef, pork, etc., taken from under the short ribs in the hindquarters."
+    },
+    {
+        "id": "turkey",
+        "translate": "индейка",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/turkey--1_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a large mainly domesticated game bird native to North America, having a bald head and (in the male) red wattles. It is a popular food on festive occasions such as Christmas and (in the US) Thanksgiving."
+    },
+    {
+        "id": "veal",
+        "translate": "телятина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/veal--_gb_2.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "veal and ham pie",
+        "definitions": "the flesh of a young calf, used as food."
+    },
+    {
+        "id": "venison",
+        "translate": "оленина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/venison--_gb_1.mp3",
+        "thema": "meat",
+        "partOfSpeech": "noun",
+        "example": "venison steaks",
+        "definitions": "meat from a deer."
+    },
+    {
+        "id": "cod",
+        "translate": "треска",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cod--_gb_2.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a large marine fish with a small barbel on the chin."
+    },
+    {
+        "id": "eel",
+        "translate": "угорь",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/eel--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a snake-like fish with a slender elongated body and poorly developed fins, proverbial for its slipperiness."
+    },
+    {
+        "id": "grouper",
+        "translate": "морской окунь",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/grouper--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a large or very large heavy-bodied fish of the sea bass family, with a big head and wide mouth, found in warm seas."
+    },
+    {
+        "id": "herring",
+        "translate": "сельдь",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/herring--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a fairly small silvery fish which is most abundant in coastal waters and is of widespread commercial importance."
+    },
+    {
+        "id": "mackerel",
+        "translate": "скумбрия",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/mackerel--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a predatory marine fish with a greenish-blue back, important as a food fish."
+    },
+    {
+        "id": "pike",
+        "translate": "щука",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pike--1_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a long-bodied predatory freshwater fish with a pointed snout and large teeth, of both Eurasia and North America."
+    },
+    {
+        "id": "pikeperch",
+        "translate": "судак",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pikeperch--_gb_1.8.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a predatory pike-like freshwater fish of the perch family, especially the zander."
+    },
+    {
+        "id": "plaice",
+        "translate": "камбала",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/plaice--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a North Atlantic flatfish which is a commercially important food fish."
+    },
+    {
+        "id": "salmon",
+        "translate": "семга",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/salmon--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a large edible fish that is a popular sporting fish, much prized for its pink flesh. Salmon mature in the sea but migrate to freshwater streams to spawn."
+    },
+    {
+        "id": "sardines",
+        "translate": "сардины",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/sardine--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a young pilchard or other young or small herring-like fish."
+    },
+    {
+        "id": "sole",
+        "translate": "морской язык",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/sole--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": "the soles of their feet were nearly black with dirt",
+        "definitions": "the undersurface of a person's foot."
+    },
+    {
+        "id": "sturgeon",
+        "translate": "осетрина",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/sturgeon--_gb_1.8.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a very large primitive fish with bony plates on the body. It occurs in temperate seas and rivers of the northern hemisphere, especially central Eurasia, and is of commercial importance for its caviar and flesh."
+    },
+    {
+        "id": "trout",
+        "translate": "форель",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/trout--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a chiefly freshwater fish of the salmon family, found in both Eurasia and North America and highly valued for food and game."
+    },
+    {
+        "id": "fish",
+        "translate": "рыба",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/fish--_gb_1.mp3",
+        "thema": "fish",
+        "partOfSpeech": "noun",
+        "example": "the huge lakes are now devoid of fish",
+        "definitions": "a limbless cold-blooded vertebrate animal with gills and fins living wholly in water."
+    },
+    {
+        "id": "asparagus",
+        "translate": "спаржа",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/asparagus--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a tall plant of the lily family with fine feathery foliage, cultivated for its edible shoots."
+    },
+    {
+        "id": "avocado",
+        "translate": "авокадо",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/avocado--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "a salad of avocados and oranges",
+        "definitions": "a pear-shaped fruit with a rough leathery skin and smooth, oily edible flesh."
+    },
+    {
+        "id": "beans",
+        "translate": "бобы",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/bean--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "a tin of beans",
+        "definitions": "an edible seed, typically kidney-shaped, growing in long pods on certain leguminous plants."
+    },
+    {
+        "id": "beet",
+        "translate": "свекла",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/beet--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a herbaceous plant widely cultivated as a source of food for humans and livestock, and for processing into sugar. Some varieties are grown for their leaves and some for their large nutritious root."
+    },
+    {
+        "id": "broccoli",
+        "translate": "брокколи",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/broccoli--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a cultivated variety of cabbage bearing heads of green or purplish flower buds that are eaten as a vegetable."
+    },
+    {
+        "id": "cabbage",
+        "translate": "капуста",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cabbage--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a cultivated plant eaten as a vegetable, having thick green or purple leaves surrounding a spherical heart or head of young leaves."
+    },
+    {
+        "id": "carrot",
+        "translate": "морковь",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/carrot--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "roast lamb with peas and carrots",
+        "definitions": "a tapering orange-coloured root eaten as a vegetable."
+    },
+    {
+        "id": "cauliflower",
+        "translate": "цветная капуста",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cauliflower--_gb_2.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a cabbage of a variety which bears a large immature flower head of small creamy-white flower buds."
+    },
+    {
+        "id": "chard",
+        "translate": "листовая свекла",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/chard--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a beet of a variety with broad edible white leaf stalks and green blades."
+    },
+    {
+        "id": "cucumber",
+        "translate": "огурец",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/cucumber--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a long, green-skinned fruit with watery flesh, usually eaten raw in salads or pickled."
+    },
+    {
+        "id": "eggplant",
+        "translate": "баклажан",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/eggplant--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "the purple egg-shaped fruit of a tropical Old World plant, which is eaten as a vegetable; an aubergine."
+    },
+    {
+        "id": "garlic",
+        "translate": "чеснок",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/garlic--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "garlic butter",
+        "definitions": "a strong-smelling pungent-tasting bulb, used as a flavouring in cooking and in herbal medicine."
+    },
+    {
+        "id": "kohlrabi",
+        "translate": "кольраби",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/kohlrabi--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a cabbage of a variety with an edible swollen stem."
+    },
+    {
+        "id": "leek",
+        "translate": "лук-порей",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/leek--_gb_2.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a plant related to the onion, with flat overlapping leaves forming an elongated cylindrical bulb which together with the leaf bases is eaten as a vegetable. It is used as a Welsh national emblem."
+    },
+    {
+        "id": "lentils",
+        "translate": "чечевица",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/lentil--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a high-protein pulse which is dried and then soaked and cooked prior to eating."
+    },
+    {
+        "id": "onion",
+        "translate": "лук репчатый",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/onion--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "cook the onion in the oil until lightly coloured",
+        "definitions": "a swollen edible bulb used as a vegetable, having a pungent taste and smell and composed of several concentric layers."
+    },
+    {
+        "id": "pea",
+        "translate": "горох",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pea--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "steak and ale pie with peas and new potatoes",
+        "definitions": "a spherical green seed that is eaten as a vegetable or as a pulse when dried."
+    },
+    {
+        "id": "pepper",
+        "translate": "стручковый перец",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pepper--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "season to taste with salt and pepper",
+        "definitions": "a pungent hot-tasting powder prepared from dried and ground peppercorns, used as a spice or condiment to flavour food."
+    },
+    {
+        "id": "potato",
+        "translate": "картофель",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/potato--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": "roast potatoes",
+        "definitions": "a starchy plant tuber which is one of the most important food crops, cooked and eaten as a vegetable."
+    },
+    {
+        "id": "scallion",
+        "translate": "зеленый лук",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/scallion--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a long-necked onion with a small bulb, in particular a spring onion."
+    },
+    {
+        "id": "spinach",
+        "translate": "шпинат",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/spinach--_gb_2.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "an edible Asian plant of the goosefoot family, with large dark green leaves which are widely eaten as a vegetable."
+    },
+    {
+        "id": "pumpkin",
+        "translate": "тыква",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pumpkin--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a large rounded orange-yellow fruit with a thick rind, the flesh of which can be used in sweet or savoury dishes."
+    },
+    {
+        "id": "turnip",
+        "translate": "репа",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/turnip--_gb_1.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "a round root with white or cream flesh which is eaten as a vegetable and also has edible leaves."
+    },
+    {
+        "id": "zucchini",
+        "translate": "цуккини",
+        "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/zucchini--_gb_1.8.mp3",
+        "thema": "vegetables",
+        "partOfSpeech": "noun",
+        "example": null,
+        "definitions": "the immature fruit of a vegetable marrow; a courgette."
+    }
+]

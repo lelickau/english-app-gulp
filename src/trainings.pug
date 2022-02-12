@@ -7,20 +7,20 @@ html
             include html/header
             main.main
                 .container
-                    section.training.training__hidden
-                        article.training__item.quiz
+                    section.training
+                        article.training__item.quiz-test
                             img(class="training__ico" src="@img/quiz.svg", alt="`Quiz")
                             h3.training__title Викторина
                             p.training__description Выбери правильный вариант ответа из четырех предложенных
-                        article.training__item
+                        article.training__item.believe-test
                             img(class="training__ico" src="@img/believe-game.svg", alt="Believe or not believe")
                             h3.training__title Верю - Не верю
                             p.training__description Определи верно или не верно подобран перевод к слову
-                        article.training__item
+                        article.training__item.constructor-test
                             img(class="training__ico" src="@img/constructor.svg", alt="Constructor")
                             h3.training__title Конструктор
                             p.training__description Составь слово из разбросанных букв
-                    include html/training/quiz/quiz-test
+                    include html/training/quiz/quiz
 
 
             include html/footer

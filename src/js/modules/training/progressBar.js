@@ -20,6 +20,5 @@ export const createProgressBar = (numOfQuestions) => {
         box.appendChild(item)
     }
 
-    console.log(box);
     return box
 }
