@@ -7,7 +7,7 @@
     right: 5px;
     z-index: 100;
     background-color: $box;
-    @extend %box-border-shadow;
+    @include box-border-shadow;
 }
 
 .menu {
@@ -23,7 +23,7 @@
     }
 
     &__item {
-        @extend %title-font;
+        @include title-font;
         color: $text;
     }
 

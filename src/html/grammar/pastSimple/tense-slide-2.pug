@@ -1,0 +1,12 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('yesterday – вчера', 'Yesterday I worked hard. — Вчера я много работал.')
+            +grammar-list('the day before yesterday - позавчера', 'I was with my friends the day before yesterday. — Позавчера я был с друзьями.')
+            +grammar-list('the other day - на днях', 'They met the other day . — На днях они встречались.')
+            +grammar-list('last (week, month, year, weekend) - на/в прошлой(-м) (неделе, месяце, году, выходных)', 'We stayed at home last weekend - В прошлые выходные мы остались дома.')
+            +grammar-list('(hour, day, week, month, year) ago - (час, день, неделя, месяц, год) назад', ' I met Jane ten days ago. - Десять дней назад я встретил Джейн.')
+            +grammar-list('just now - только что', ' I saw Tom just now. - Я только что видел Тома.')
+            +grammar-list('in 1890 - в 1890', 'Bob met Mary in 1990. - Боб встретил Мери в 1990.')

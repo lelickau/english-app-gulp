@@ -1,4 +1,9 @@
-mixin grammar-link(title, id, classAccent, text)
-    article.verb(id=id class=classAccent)
-        h3.verb__title.title= title
-        p.verb__text= text
+mixin grammar-list-point(text)
+    li.tense__list-point
+        img(class="tense__list-img" src="@img/list-point.svg", alt="+")
+        p.tense__list-text= text
+
+mixin grammar-list(word, example)
+    li.tense__list
+        p.tense__list-word= word
+        p.tense__list-example= example

@@ -1,12 +1,27 @@
 @import '../_variables';
 
+.wrapper {
+    &__grammar {
+        background-color: $pastel_1;
+
+        &::after {
+            @include wrapper-top;
+            background-color: $pastel_1;
+        }
+    }
+}
+
 .grammar {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 -5px;
-    margin-top: 30px;
-    margin-bottom: 37px;
+
+    &__items {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+        margin-top: 30px;
+        margin-bottom: 37px;
+    }
 
     &__hidden {
         display: none;

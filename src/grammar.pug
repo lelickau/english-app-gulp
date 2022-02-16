@@ -1,32 +1,36 @@
-include html/mixins/grammar-tense-item
+mixin grammar-link(title, id, classAccent, text)
+    a.verb(href=id+'.html' id=id class=classAccent)
+        h3.verb__title.title= title
+        p.verb__text= text
+
 - var title = "Базовая грамматика";
 html
     include html/head
     body
-        .wrapper
+        .wrapper.wrapper__grammar
             include html/header
             main.main
                 .container
-                    h2.title Простое (неопределенное) время - Simple Tense
                     section.grammar
-                        +grammar-link('Present Simple', 'presentSimple', 'accent_1', 'Время Present Simple обозначает действие в настоящем в широком смысле слова. Оно употребляется для обозначения обычных, регулярно повторяющихся или постоянных действий, например, когда мы говорим о чьих-либо привычках, режиме дня, расписании и т. д.')
-                        +grammar-link('Past Simple', 'pastSimple', 'accent_2', 'Время Past Simple используется для обозначения действия, которое произошло в определенное время в прошлом и время совершения которого уже истекло.')
-                        +grammar-link('Future Simple', 'futureSimple', 'accent_3', 'Время Future Simple ссылается на действие, которое совершится в неопределенном или отдаленном будущем.')
-                    h2.title Длительное время - Continuous Tense
-                    section.grammar
-                        +grammar-link('Present Continuous', 'presentContinuous', 'accent_1', 'Время Present Continuous указывает на процесс, длящийся непосредственно в момент речи. ')
-                        +grammar-link('Past Continuous', 'pastContinuous', 'accent_2', 'Время Past Continuous указывает на процесс, длившийся в определенный момент или период в прошлом. В отличие от времени Past Simple, этот момент в прошлом должен быть назван прямо или быть очевидным из контекста.')
-                        +grammar-link('Future Continuous', 'futureContinuous', 'accent_3', 'Время Future Continuous указывает на процесс, который будет длиться в определенный момент в будущем. В отличие от времени Future Simple, этот момент в будущем должен быть назван прямо или быть очевидным из контекста.')
-                    h2.title Совершенное время - Perfect Tense
-                    section.grammar
-                        +grammar-link('Present Perfect', 'presentPerfect', 'accent_1', 'Время Present Perfect обозначает действие, которое завершилось к настоящему моменту или завершено в период настоящего времени. ')
-                        +grammar-link('Past Perfect', 'pastPerfect', 'accent_2', 'Время Past Perfect обозначает действие, которое завершилось до определенного момента в прошлом.')
-                        +grammar-link('Future Perfect', 'futurePerfect', 'accent_3', 'Время Future Perfect обозначает действие, которое закончится до определенного момента или начала другого действия в будущем или будет продолжать длиться после него.')
-                    h2.title Длительное совершенное время - Perfect Continuous Tense
-                    section.grammar
-                        +grammar-link('Present Perfect Continuous', 'presentPerfectContinuous', 'accent_1', 'Время Present Perfect Continuous указывает на действие, которое началось в прошлом, продолжалось в течение некоторого времени и либо закончилось непосредственно перед разговором или все еще продолжается в момент разговора.')
-                        +grammar-link('Past Perfect Continuous', 'pastPerfectContinuous', 'accent_2', 'Время Past Perfect Continuous указывает на действие, которое началось в прошлом, продолжалось в течение некоторого времени и либо закончилось непосредственно перед неким моментом в прошлом или все еще не закончилось к некоему моменту в прошлом.')
-                        +grammar-link('Future Perfect Continuous', 'futurePerfectContinuous', 'accent_3', 'Время Future Perfect Continuous указывает на действие, которое началось и продолжалось в течение некоторого времени до определенного момента в будущем. Это время используется очень редко, а в устной речи – практически никогда.')
-                    include html/grammar/presentSimple
+                        h2.grammar__title.title Простое (неопределенное) время - Simple Tense
+                        article.grammar__items
+                            +grammar-link('Present Simple', 'presentSimple', 'accent_1', 'Время Present Simple обозначает действие в настоящем в широком смысле слова. Оно употребляется для обозначения обычных, регулярно повторяющихся или постоянных действий, например, когда мы говорим о чьих-либо привычках, режиме дня, расписании и т. д.')
+                            +grammar-link('Past Simple', 'pastSimple', 'accent_2', 'Время Past Simple используется для обозначения действия, которое произошло в определенное время в прошлом и время совершения которого уже истекло.')
+                            +grammar-link('Future Simple', 'futureSimple', 'accent_3', 'Время Future Simple ссылается на действие, которое совершится в неопределенном или отдаленном будущем.')
+                        h2.grammar__title.title Длительное время - Continuous Tense
+                        article.grammar__items
+                            +grammar-link('Present Continuous', 'presentContinuous', 'accent_1', 'Время Present Continuous указывает на процесс, длящийся непосредственно в момент речи. ')
+                            +grammar-link('Past Continuous', 'pastContinuous', 'accent_2', 'Время Past Continuous указывает на процесс, длившийся в определенный момент или период в прошлом. В отличие от времени Past Simple, этот момент в прошлом должен быть назван прямо или быть очевидным из контекста.')
+                            +grammar-link('Future Continuous', 'futureContinuous', 'accent_3', 'Время Future Continuous указывает на процесс, который будет длиться в определенный момент в будущем. В отличие от времени Future Simple, этот момент в будущем должен быть назван прямо или быть очевидным из контекста.')
+                        h2.grammar__title.title Совершенное время - Perfect Tense
+                        article.grammar__items
+                            +grammar-link('Present Perfect', 'presentPerfect', 'accent_1', 'Время Present Perfect обозначает действие, которое завершилось к настоящему моменту или завершено в период настоящего времени. ')
+                            +grammar-link('Past Perfect', 'pastPerfect', 'accent_2', 'Время Past Perfect обозначает действие, которое завершилось до определенного момента в прошлом.')
+                            +grammar-link('Future Perfect', 'futurePerfect', 'accent_3', 'Время Future Perfect обозначает действие, которое закончится до определенного момента или начала другого действия в будущем или будет продолжать длиться после него.')
+                        h2.grammar__title.title Длительное совершенное время - Perfect Continuous Tense
+                        article.grammar__items
+                            +grammar-link('Present Perfect Continuous', 'presentPerfectContinuous', 'accent_1', 'Время Present Perfect Continuous указывает на действие, которое началось в прошлом, продолжалось в течение некоторого времени и либо закончилось непосредственно перед разговором или все еще продолжается в момент разговора.')
+                            +grammar-link('Past Perfect Continuous', 'pastPerfectContinuous', 'accent_2', 'Время Past Perfect Continuous указывает на действие, которое началось в прошлом, продолжалось в течение некоторого времени и либо закончилось непосредственно перед неким моментом в прошлом или все еще не закончилось к некоему моменту в прошлом.')
+                            +grammar-link('Future Perfect Continuous', 'futurePerfectContinuous', 'accent_3', 'Время Future Perfect Continuous указывает на действие, которое началось и продолжалось в течение некоторого времени до определенного момента в будущем. Это время используется очень редко, а в устной речи – практически никогда.')
             include html/footer
             script(src='js/app.min.js')

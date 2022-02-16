@@ -2,14 +2,18 @@
 
 .wrapper__cards {
     background-color: $pastel_3;
+    &::after {
+        @include wrapper-top;
+        background-color: $pastel_3;
+    }
 }
 
 .cards {
     &__title {
         position: relative;
         padding: 10px;
-        @extend %title-font;
-        @extend %box-border-shadow ;
+        @include title-font;
+        @include box-border-shadow ;
         background-color: $bright_3;
         border-radius: 8px;
         color: $box;
@@ -33,7 +37,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: #fff;
-        @extend %box-border-shadow;
+        @include box-border-shadow;
         transition: .5s;
 
         &:hover {
@@ -44,6 +48,5 @@
 
     &__topics-item-title {
         margin-top: 10px;
-        @extend %text-font;
     }
 }

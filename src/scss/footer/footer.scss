@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @extend %box-border-shadow;
+    @include box-border-shadow;
 
     &__copyright {
         font-size: 14px;
