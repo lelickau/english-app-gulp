@@ -1,0 +1,12 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('soon – скоро', 'Bob and Mary will get married soon. — Боб и Мэри скоро поженятся.')
+            +grammar-list('later - позже', 'I will call you later. — Я тебе позвоню позже.')
+            +grammar-list('as soon as - как только', 'I will call you back as soon as I find the ticket. — Я перезвоню тебе, как только найду билет.')
+            +grammar-list('tomorrow - завтра', 'I will be home tomorrow. - Завтра я буду дома.')
+            +grammar-list('tonight - вечером', 'It will snow tonight. — Вечером пойдёт снег.')
+            +grammar-list('next (week, year) - на следующей неделе(году)', ' We will visit London next year. — Я посещу Лондон в следующем году.')
+            +grammar-list('in (a month, three days, 2045) - через (месяц, три дня), в 2045', 'I will serve the lunch in a minute. — Я накрою обед через минуту.')

@@ -1,0 +1,80 @@
+@import '../variables';
+
+.dictionary {
+    background-color: $box;
+    @include box-border-shadow;
+
+    &__header {
+        padding: 20px 34px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include subtitle-font;
+    }
+
+    &__close-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__content {
+        padding: 35px;
+        background-color: $pastel_3;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 550px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $bright_3;
+        @include box-border-shadow;
+        margin-bottom: 23px;
+    }
+
+    &__audio {
+
+    }
+
+    &__audio-img,
+    &__example-img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    &__word-box {
+        padding: 9px 21px;
+        flex: 1;
+        background-color: $box;
+        border-radius: 8px;
+        margin-left: 30px;
+    }
+
+    &__word {
+        @include subtitle-font ;
+        text-transform: lowercase;
+    }
+
+    &__example {
+
+    }
+
+    &__footer {
+        height: 40px;
+    }
+
+    &__hidden {
+        display: none;
+    }
+}

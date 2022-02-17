@@ -1,4 +1,4 @@
-import foods from '../../../data/data-food-a1.json'
+import a1 from '../../../data/data-a1.json'
 import {createProgressBar} from '../progressBar.js'
 import {increasePoints, checkingAnswar} from '../points.js'
 import {playAudio} from '../../audio/play.js'
@@ -21,7 +21,7 @@ export const quizTest = () => {
 
     const startQuizTest = async () => {
         let points = 0
-        const questions = await createTestQuiz(foods) // //*
+        const questions = await createTestQuiz(a1) // //*
 
         if (questions) {
             const progressBar = createProgressBar(questions.length)

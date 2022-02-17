@@ -24,10 +24,19 @@ if (window.location.pathname == '/trainings.html') {
 import {scriptsGrammarPage} from './modules/grammar/index.js'
 const presentSimple = window.location.pathname == '/presentSimple.html'
 const pastSimple = window.location.pathname == '/pastSimple.html'
+const futureSimple = window.location.pathname == '/futureSimple.html'
 
-if (presentSimple || pastSimple) {
+if (presentSimple || pastSimple || futureSimple) {
     console.log('Page Grammar')
     scriptsGrammarPage()
+}
+
+//Cards
+import { scriptCardsPage } from './modules/cards/index.js'
+
+if (window.location.pathname == '/cards.html') {
+    console.log('Page Cards')
+    scriptCardsPage()
 }
 
 

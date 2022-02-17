@@ -593,7 +593,7 @@ a {
   align-items: center;
   margin-right: 30px;
 }
-.tense__subjects-item, .tense__words {
+.tense__subjects-item, .tense__words, .tense__scheme-text {
   color: #fff;
 }
 .tense__scheme-arrow {
@@ -961,6 +961,79 @@ a {
 }
 .cards__topics-item-title {
   margin-top: 10px;
+}
+.cards__hidden {
+  display: none;
+}
+
+/**/
+.dictionary {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+}
+.dictionary__header {
+  padding: 20px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dictionary__title {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.dictionary__close-img {
+  width: 35px;
+  height: 35px;
+}
+.dictionary__content {
+  padding: 35px;
+  background-color: #FFEBCB;
+}
+.dictionary__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dictionary__item {
+  width: 550px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5A72B;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 23px;
+}
+.dictionary__audio-img, .dictionary__example-img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.dictionary__word-box {
+  padding: 9px 21px;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+.dictionary__word {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+.dictionary__footer {
+  height: 40px;
+}
+.dictionary__hidden {
+  display: none;
 }
 
 @media (max-height: 720px) {
