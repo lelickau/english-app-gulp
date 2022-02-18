@@ -26,7 +26,7 @@ const presentSimple = window.location.pathname == '/presentSimple.html'
 const pastSimple = window.location.pathname == '/pastSimple.html'
 const futureSimple = window.location.pathname == '/futureSimple.html'
 
-if (presentSimple || pastSimple || futureSimple) {
+if (presentSimple || pastSimple) {
     console.log('Page Grammar')
     scriptsGrammarPage()
 }
