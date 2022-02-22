@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
 
-    &__points {
+    &__points,
+    &__deadline {
         width: 80px;
         height: 32px;
         display: flex;

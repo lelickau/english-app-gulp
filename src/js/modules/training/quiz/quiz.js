@@ -1,5 +1,5 @@
 import a1 from '../../../data/data-a1.json'
-import {createProgressBar} from '../progressBar.js'
+import {createProgressBar, createProgressPoint} from '../progressBar.js'
 import {increasePoints, checkingAnswar} from '../points.js'
 import {playAudio} from '../../audio/play.js'
 import {createHint} from '../../hint/hint.js'
@@ -14,21 +14,24 @@ export const quizTest = () => {
     const closeQuizBtn = document.querySelector('.quiz__close')
     const quizDescrBox = document.querySelector('.quiz__description')
     const questionsBox = document.querySelector('.quiz__questions-box')
-    const quizProgress= document.querySelector('.progress')
     const quizLogo = document.querySelector('.quiz__logo')
 
     quizTestBlock.classList.remove('quiz__hidden')
 
-    const startQuizTest = async () => {
+    const startQuizTest = () => {
         let points = 0
-        const questions = await createTestQuiz(a1) // //*
+        const questions = createTestQuiz(a1) // //*
 
         if (questions) {
+            const quizHeader = document.querySelector('.quiz__header')
+            const progressPoint = createProgressPoint('.progress__quiz')
+            quizHeader.insertAdjacentElement('afterbegin', progressPoint)
+
             const progressBar = createProgressBar(questions.length)
 
             quizDescrBox.classList.add('quiz__hidden')
             quizLogo.classList.add('quiz__hidden')
-            quizProgress.appendChild(progressBar)
+            progressPoint.appendChild(progressBar)
 
             questions.forEach((item, idx) => {
                 const hint = createHint(item.definitions)
@@ -40,7 +43,7 @@ export const quizTest = () => {
                         <div class="quiz__console">
                             <img class="quiz__console-ico quiz__show-hint" src="images/question.svg" alt="Подсказка">
                             <div class="quiz__word">${item.id}</div>
-                            <img class="quiz__console-ico quiz__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">
+                            ${item.mp3 ? `<img class="believe__console-ico believe__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">`: "<div class='quiz__console-ico'></div>"}
                         </div>
                     </div>
                     <div class="quiz__options">
@@ -118,11 +121,7 @@ export const quizTest = () => {
     }
 
     const closeTest = (e) => {
-        e.preventDefault()
-        quizDescrBox.classList.remove('quiz__hidden')
-        questionsBox.innerHTML = ''
-        quizTestBlock.classList.add('quiz__hidden')
-        trainingMenu.classList.remove('training__hidden')
+        window.location.reload()
     }
 
     closeQuizBtn.addEventListener('click', closeTest)

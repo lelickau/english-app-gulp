@@ -1,6 +1,6 @@
 @import '../variables';
 
-.quiz{
+.believe{
     max-width: 1280px;
     margin: 0 auto;
     @include box-border-shadow;
@@ -12,6 +12,10 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: 20px;
+    }
+
+    &__logo {
+        width: 80px;
     }
 
     &__close {
@@ -96,18 +100,28 @@
     }
 
     &__options {
-        margin-top: 40px;
+        padding: 0 40px 40px 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 20px;
         column-gap: 30px;
+        background-color: $pastel_2;
     }
 
-    &__btn {
+    &__btn-false,
+    &__btn-true {
         @include default-btn;
-        background-color: $bright_2;
         color: $box;
-        @include shadow-btn_2;
+    }
+
+    &__btn-true {
+        @include shadow-btn_1;
+        background-color: $bright_1;
+    }
+
+    &__btn-false {
+        background-color: $bright_3;
+        @include shadow-btn_3;
     }
 
     //

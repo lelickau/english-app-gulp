@@ -1,9 +1,20 @@
-export const createProgressBar = (numOfQuestions) => {
-    const progressPoints = document.querySelector('.progress__points')
-    progressPoints.classList.remove('progress__hidden')
+export const createProgressPoint = (selector) => {
+    const progress = document.querySelector(selector)
 
-    const box = document.createElement('div')
-    box.className = 'progress__bar'
+    const progressPoints = document.createElement('div')
+    progressPoints.className = 'progress__points'
+    progressPoints.innerHTML = '0'
+
+    progress.append(progressPoints)
+
+    return progress
+
+}
+
+export const createProgressBar = (numOfQuestions) => {
+
+    const progressBar = document.createElement('div')
+    progressBar.className = 'progress__bar'
 
     for (let i = 0; i < numOfQuestions; i++) {
         const item = document.createElement('div')
@@ -17,8 +28,8 @@ export const createProgressBar = (numOfQuestions) => {
             item.className = 'progress__item progress__item-end'
         }
 
-        box.appendChild(item)
+        progressBar.appendChild(item)
     }
 
-    return box
+    return progressBar
 }

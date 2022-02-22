@@ -1,4 +1,6 @@
 import { quizTest } from "./quiz/quiz.js"
+import { believeGame } from "./believeGame/believeGame.js"
+
 export const scriptsTrainingPage = () => {
 
     const trainingMenu = document.querySelector('.training')
@@ -9,5 +11,11 @@ export const scriptsTrainingPage = () => {
     quizTestBtn.addEventListener('click', () => {
         trainingMenu.classList.add('training__hidden')
         quizTest()
+    })
+
+    believeTestBtn.addEventListener('click', () => {
+        trainingMenu.classList.add('training__hidden')
+        console.log('Believe Test');
+        believeGame()
     })
 }

@@ -1,45 +1,35 @@
-import a1 from '../../data/data-a1.json';
+import { getTopicData } from "./getTopicData.js"
+import { createContentDictionary } from "./createContentDictionary.js"
 
 export const scriptCardsPage = () => {
+    const cards = document.querySelector('.cards')
+    const dictionary = document.querySelector('.dictionary')
+    const topicsBtn = document.querySelectorAll('.cards__topics-item')
+    const dictionaryContentBox = document.querySelector('.dictionary__content')
 
-    const createContentDictionary = (topicData) => {
-        const content = document.createElement('div')
-        content.className = 'dictionary__items'
+    const closeBtn = document.querySelector('.dictionary__close')
 
-        for (let i = 0; i < topicData.length; i++) {
-            const elem = `
-                <div class="dictionary__item">
-                    <div class="dictionary__audio" data-audio-src="${topicData[i].mp3}">
-                        <img class="dictionary__audio-img" src="images/audio.svg" alt="audio" />
-                    </div>
-                    <img class="dictionary__example-img" src="images/question.svg" alt="hint" />
-                    <p class="dictionary__word-box">
-                        <span class="dictionary__word">${topicData[i].id}</span> -
-                        <span class="dictionary__word">${topicData[i].translate}</span>
-                    </p>
-                    <p class="dictionary__example dictionary__hidden">${topicData[i].example}</p>
-                </div>
-            `
-            content.insertAdjacentHTML('beforeend', elem)
-        }
-
-        return content
+    const closeTopicContent = (e) => {
+        cards.classList.remove('cards__hidden')
+        dictionary.classList.add('dictionary__hidden')
+        dictionaryContentBox.innerHTML = ''
     }
 
-    const getTopicData = (level, topic) => {
-        const levels = {
-            a1
-        }
-        return levels[level].filter(elem => elem.thema === topic)
+    closeBtn.addEventListener('click', closeTopicContent)
+
+    const showExample = (e) => {
+        const parent = e.currentTarget.closest('.dictionary__item-box')
+        parent.querySelector('.dictionary__example').classList.remove('dictionary__hidden')
     }
 
     const openTopic = (e) => {
-        const cards = document.querySelector('.cards')
-        const dictionary = document.querySelector('.dictionary')
-        const dictionaryContentBox = document.querySelector('.dictionary__content')
+        const dictionaryTitleBox = document.querySelector('.dictionary__title')
 
-        const topicName = e.target.getAttribute('data-topic')
-        const topicLevel = e.target.getAttribute('data-level')
+        const topicName = e.currentTarget.getAttribute('data-topic')
+        const topicLevel = e.currentTarget.getAttribute('data-level')
+        const topicTitle = e.currentTarget.getAttribute('data-title')
+        dictionaryTitleBox.innerHTML = topicTitle
+
         cards.classList.add('cards__hidden')
         dictionary.classList.remove('dictionary__hidden')
 
@@ -48,10 +38,14 @@ export const scriptCardsPage = () => {
         const content = createContentDictionary(topicData)
 
         dictionaryContentBox.appendChild(content)
+
+        const showExampleBtn = document.querySelectorAll('.show-example')
+        showExampleBtn.forEach(btn => btn.addEventListener('click', showExample))
     }
 
-    const topicsBtn = document.querySelectorAll('.cards__topics-item')
     topicsBtn.forEach(btn => {
         btn.addEventListener('click', openTopic)
     })
+
+
 }
