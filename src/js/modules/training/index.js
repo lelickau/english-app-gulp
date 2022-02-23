@@ -1,5 +1,6 @@
 import { quizTest } from "./quiz/quiz.js"
 import { believeGame } from "./believeGame/believeGame.js"
+import { constructorGame } from "./constructor/constructorGame.js"
 
 export const scriptsTrainingPage = () => {
 
@@ -15,7 +16,11 @@ export const scriptsTrainingPage = () => {
 
     believeTestBtn.addEventListener('click', () => {
         trainingMenu.classList.add('training__hidden')
-        console.log('Believe Test');
         believeGame()
+    })
+
+    constructorTestBtn.addEventListener('click', () => {
+        trainingMenu.classList.add('training__hidden')
+        constructorGame()
     })
 }

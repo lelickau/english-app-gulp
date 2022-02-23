@@ -25,8 +25,9 @@ import {scriptsGrammarPage} from './modules/grammar/index.js'
 const presentSimple = window.location.pathname == '/presentSimple.html'
 const pastSimple = window.location.pathname == '/pastSimple.html'
 const futureSimple = window.location.pathname == '/futureSimple.html'
+const presentContinuous = window.location.pathname == '/presentContinuous.html'
 
-if (presentSimple || pastSimple) {
+if (presentSimple || pastSimple || futureSimple || presentContinuous) {
     console.log('Page Grammar')
     scriptsGrammarPage()
 }

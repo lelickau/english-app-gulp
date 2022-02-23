@@ -1,0 +1,24 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('Currently - сейчас, теперь, в настоящее время', 'You are currently working for this company. – Ты как раз сейчас работаешь на эту компанию.')
+            +grammar-list('Today - сегодня', 'I am visiting Jane today. — Сегодня я навещаю Джейн.')
+            +grammar-list('Tonight - сегодня вечером', 'I am studying tonight. — Сегодня вечером я занимаюсь.')
+            +grammar-list('Now - сейчас, right now - прямо сейчас', 'I am working now. — Сейчас я работаю. I am writing a letter right now. — Прямо сейчас я пишу письмо.')
+            +grammar-list('At present - в настоящее время', 'At present he isn’t teaching Russian – В настоящее время он не преподает русский.')
+            +grammar-list('At this moment / at the moment - в данный момент, в эту минуту', 'At this moment they are looking for our car. — В этот момент они ищут нашу машину.')
+            +grammar-list('Still - до сих пор, все еще', 'He is still watching for my cat. — Он до сих пор присматривает за моей кошкой.')
+    .tense__scheme
+        .tense__subjects-item В английском языке есть глаголы, которые невозможно употребить в длительной форме, и они не используются для образования Present Continuous, для них нужен Present Simple.
+            .tense__examples
+                .tense__examples-item
+                    b Эмоции:
+                    span  love - любить, like - нравится, want - хотеть, wish - желать, hate - ненавидеть, need - нуждаться, prefer - предпочитать
+                .tense__examples-item
+                    b Мыслительные процессы:
+                    span   know - знать, agree - соглашаться, believe - верить, forget - забывать, expect - ожидать, understand - понимать, respect - уважать, remember - помнить
+                .tense__examples-item
+                    b Обладание, отношение:
+                    span   be - быть, belong - принадлежать, consist - состоять, have - иметь

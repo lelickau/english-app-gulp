@@ -1,18 +1,11 @@
 import a1 from '../../../data/data-a1.json'
-import { getRandomInt } from '../randomInt.js'
+import { cteateIndexData, getRandomInt } from '../cteateIndexData.js'
 
 export const createTestBelieveGame = () => {
     let testWords = []
-    const lengthData = a1.length -1
+    const lengthData = a1.length
 
-    const randomWordsIdx = []
-    for (let i = 0; i < 35; i++) {
-        let int = getRandomInt(0, lengthData)
-        if (randomWordsIdx.includes(int)) {
-            int = getRandomInt(0, lengthData)
-        }
-        randomWordsIdx.push(int)
-    }
+    const randomWordsIdx = cteateIndexData(40, lengthData)
 
     randomWordsIdx.map(idx => {
         const idxAnswar = getRandomInt(0, 1)

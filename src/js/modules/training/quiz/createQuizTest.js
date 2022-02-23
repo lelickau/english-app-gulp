@@ -1,18 +1,12 @@
-import { getRandomInt } from "../randomInt.js"
+import { getRandomInt, cteateIndexData } from "../cteateIndexData.js"
+
 
 export const createTestQuiz = (dataWords) => {
 
     let testWords = []
-    const lengthData = dataWords.length -1
+    const lengthData = dataWords.length
 
-    const randomWordsIdx = []
-    for (let i = 0; i < 10; i++) {
-        let int = getRandomInt(0, lengthData)
-        if (randomWordsIdx.includes(int)) {
-            int = getRandomInt(0, lengthData)
-        }
-        randomWordsIdx.push(int)
-    }
+    const randomWordsIdx = cteateIndexData(10, lengthData)
 
     randomWordsIdx.map(idx => testWords.push(dataWords[idx]))
 

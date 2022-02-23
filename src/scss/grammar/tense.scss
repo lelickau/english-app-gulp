@@ -222,7 +222,7 @@
         align-items: center;
         margin-right: 30px;
     }
-    
+
     &__subjects-item,
     &__words,
     &__scheme-text {
@@ -249,6 +249,7 @@
     }
 
     &__examples-item {
+        color: $text;
         margin-bottom: 6px;
     }
 

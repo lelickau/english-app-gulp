@@ -36,9 +36,16 @@
     },
     {
         "text": "Результат достойный победителя.",
-        "color": ["26C1FC", "8BDFFF"],
+        "color": ["FFD700", "FFEC85"],
         "test": "believe",
         "min": 0,
+        "max": 3500
+    },
+    {
+        "text": "Результат достойный победителя.",
+        "color": ["FFD700", "FFEC85"],
+        "test": "constructor",
+        "min": -1000,
         "max": 3500
     }
 ]

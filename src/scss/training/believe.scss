@@ -124,14 +124,6 @@
         @include shadow-btn_3;
     }
 
-    //
-    &__hint {
-        margin-top: 43px;
-        background-color: $box;
-        padding: 22px;
-        border-radius: 8px;
-    }
-
     &__hidden{
         display: none;
     }

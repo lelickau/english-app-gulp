@@ -97,4 +97,11 @@ $pastel_4: #FFF2F9; // pastel respberry
     }
 }
 
+@mixin shadow-btn_error {
+    background-color: #F67463;
+    -webkit-box-shadow: 0px 5px 0px #ECC8C3;
+    -moz-box-shadow: 0px 5px 0px #ECC8C3;
+    box-shadow: 0px 5px 0px #ECC8C3;
+}
+
 /**/

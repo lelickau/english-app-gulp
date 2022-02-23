@@ -1,12 +1,10 @@
 import { createTestBelieveGame } from "./createTestBelieveGame.js"
 import { playAudio } from "../../audio/play.js"
-import {increasePoints, checkingAnswar} from '../points.js'
+import {increasePoints} from '../points.js'
 import { createProgressPoint } from "../progressBar.js"
 import { htmlTestResults } from "../htmlTestResults.js"
 
 export const believeGame = () => {
-
-    const trainingMenu = document.querySelector('.training')
 
     const believeTestBlock = document.querySelector('.believe')
     const startBelieveGameBtn = document.querySelector('.believe__btn-start')
@@ -52,7 +50,7 @@ export const believeGame = () => {
                     <div class="believe__item-header">
                         <div class="believe__console">
                             <div class="believe__word">${item.id} - ${item.answar}</div>
-                            ${item.mp3 ? `<img class="believe__console-ico believe__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">` : ''}
+                            ${item.mp3 ? `<img class="believe__console-ico believe__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">` : '<div class="believe__console-ico"></div>'}
                         </div>
                     </div>
                 `

@@ -1,0 +1,176 @@
+@import '../variables';
+
+.constructor {
+
+    max-width: 1280px;
+    margin: 0 auto;
+    @include box-border-shadow;
+    background-color: $box;
+    padding-bottom: 47px;
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    &__logo {
+        width: 35px;
+    }
+
+    &__close {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    &__description {
+        background-color: $pastel_2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    &__hidden {
+        display: none;
+    }
+
+    &__title-descr {
+        @include title-font;
+        margin-bottom: 15px;
+    }
+
+    &__content-descr {
+        display: flex;
+        align-items: center;
+        margin-top: 21px;
+    }
+
+    &__ico-descr {
+        margin-right: 12px;
+    }
+
+    &__btn-start {
+        margin: 0 auto;
+        margin-top: 76px;
+        @include default-btn;
+        background-color: $bright_2;
+        color: $box;
+        @include shadow-btn_2;
+    }
+
+    //
+    &__item {
+        padding-top: 60px;
+        padding-bottom: 78px;
+        background-color: $pastel_2;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    &__item-header {
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px;
+        background-color: $box;
+        @include box-border-shadow;
+    }
+
+    &__console {
+        padding: 21px;
+        background-color: $pastel_2;
+        border-radius: 8px;
+    }
+
+
+    &__word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include title-font;
+        text-transform: uppercase;
+    }
+
+    &__options {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn {
+        width: 55px;
+        height: 55px;
+        @include default-btn;
+        background-color: $bright_2;
+        color: $box;
+        @include shadow-btn_2;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+    }
+
+    .error {
+        @include shadow-btn_error;
+    }
+
+    &__answar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85px;
+    }
+
+    &__answer-word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include subtitle-font;
+        color: $box;
+        width: 55px;
+        height: 55px;
+        margin-left: 2px;
+        margin-right: 2px;
+        background: #81DA4F;
+        -webkit-box-shadow: 0px 5px 0px #65C655;
+        -moz-box-shadow: 0px 5px 0px #65C655;
+        box-shadow: 0px 5px 0px #65C655;
+        border-radius: 8px;
+    }
+
+    .correct {
+        width: 45px;
+        transition: .3s;
+        border-radius: 0px;
+        margin: 0px;
+        background-color: $bright_1;
+        box-shadow: none;
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+
+    .correct-mistake {
+        width: 45px;
+        transition: .3s;
+        border-radius: 0px;
+        margin: 0px;
+        background-color: $bright_3;
+        box-shadow: none;
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+}
