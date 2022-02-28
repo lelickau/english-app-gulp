@@ -1,5 +1,5 @@
 include html/mixins
-- var title = "Главная";
+- var title = "Добро пожаловать в Owl Academy!";
 html
     include html/head
     body
@@ -7,7 +7,36 @@ html
             include html/header
             main.main
                 .container
-                    h1= title
-                    
+                    section.auth
+                        article.auth__greeting
+                            .auth__greeting-item
+                                img.auth__greeting-img(src="@img/owl-1.svg" alt="Tom")
+                                p.auth__greeting-text Добро пожаловать в мир английского языка, Незнакомец! Здесь ты сможешь получить базовые знания английской грамматики и выучить повседневные слова.
+                            .auth__greeting-item
+                                img.auth__greeting-img(src="@img/owl-2.svg" alt="Alex")
+                                p.auth__greeting-text Ты можешь отслеживать свой прогресс обучения, но для этого тебе нужно зарегестрироваться.
+                        article.auth__auth
+                            h1.auth__title Авторизация
+                            form.auth__login(action="/index.php" method="POST" id="login")
+                                label.auth__label
+                                    input.auth__input(name="email" type="email" placeholder="Email" autocomplete="username")
+                                label.auth__label
+                                    input.auth__input(name="password" type="password" placeholder="Пароль" autocomplete="password")
+                                a.auth__recover-pass(href="#") Востановить пароль
+                                button.auth__btn(type="submit" name="do_login") Войти
+                            form.auth__signup.auth__hidden(action="/index.php" method="POST" id="signup")
+                                label.auth__label
+                                    input.auth__input(name="login" type="text" placeholder="Логин" autocomplete="login")
+                                label.auth__label
+                                    input.auth__input(name="email" type="email" placeholder="Email" autocomplete="username")
+                                label.auth__label
+                                    input.auth__input(name="password" type="password" placeholder="Пароль" autocomplete="password")
+                                label.auth__label
+                                    input.auth__input(name="repeat_password" type="password" placeholder="Повторить пароль" autocomplete="password")
+                                button.auth__btn(type="submit" name="do_login") Регистрация
+                            a.auth__change-create Создать аккаунт
+                            a.auth__change-auth.auth__hidden У меня есть аккаунт
+
+
             include html/footer
-            script(src='js/app.min.js')
+

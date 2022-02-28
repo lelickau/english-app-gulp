@@ -77,11 +77,14 @@ a {
     background-color: $bright_4;
 }
 
+
 @import 'reset.scss';
 @import './header/header.scss';
 @import './footer/footer.scss';
 @import './common/hint.scss';
 @import './common/results.scss';
+// auth
+@import './auth/auth.scss';
 // grammar
 @import './grammar/grammar.scss';
 @import './grammar/tense.scss';

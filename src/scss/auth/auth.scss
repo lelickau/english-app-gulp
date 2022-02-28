@@ -1,0 +1,132 @@
+@import '../variables';
+
+.auth {
+    display: flex;
+    justify-content: space-around;
+    &__greeting-item {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 53px;
+
+    }
+
+    &__greeting-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &__greeting-img {
+        width: 65px;
+    }
+
+    &__greeting-text {
+        padding: 32px;
+        border-radius: 8px;
+        background-color: $box;
+        position: relative;
+    }
+
+    &__greeting-item:nth-child(odd)> &__greeting-text {
+        max-width: 547px;
+        margin-left: 40px;
+    }
+
+    &__greeting-item:nth-child(even)> &__greeting-text {
+        max-width: 447px;
+        margin-right: 40px;
+    }
+
+    &__greeting-item:nth-child(even)> &__greeting-text::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-left: 25px solid $box;
+        border-bottom: 10px solid transparent;
+        right: -25px;
+        bottom: 25px;
+    }
+
+    &__greeting-item:nth-child(odd)> &__greeting-text::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-right: 25px solid $box;
+        border-bottom: 10px solid transparent;
+        left: -25px;
+        bottom: 25px;
+    }
+
+    &__auth {
+        margin-left: 58px;
+        margin-right: 58px;
+        width: 541px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include box-border-shadow;
+        background-color: $box;
+        padding: 50px 15px;
+    }
+
+    &__title {
+        @include title-font;
+        margin-bottom: 30px;
+    }
+
+    &__login,
+    &__signup {
+        width: 626px;
+        @include box-border-shadow;
+        padding: 44px;
+        position: relative;
+        background-color: $bright_4;
+    }
+
+    &__label + &__label {
+        display: block;
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    &__input {
+        padding: 11px 23px;
+        height: 50px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+    }
+
+    &__input::placeholder {
+        color: $bright_4;
+    }
+
+    &__recover-pass {
+        display: block;
+        color: $box;
+        margin-top: 15px;
+        text-align: right;
+    }
+
+    &__btn {
+        @include default-btn;
+        @include shadow-btn_4;
+        margin: 0 auto;
+        background-color: $box;
+        margin-top: 29px;
+    }
+
+    &__change-create,
+    &__change-auth {
+        cursor: pointer;
+        margin-top: 21px;
+        @include subtitle-font;
+    }
+
+    &__hidden {
+        display: none;
+    }
+}

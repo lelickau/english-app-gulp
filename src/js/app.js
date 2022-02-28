@@ -13,6 +13,15 @@ function isWebp() {
 }
 isWebp()
 
+// Page Auth
+import { authScripts } from './modules/auth/auth.js';
+
+if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+    console.log('Page Auth')
+    authScripts()
+}
+
+
 // Page Training
 import {scriptsTrainingPage} from './modules/training/index.js'
 
@@ -26,8 +35,9 @@ const presentSimple = window.location.pathname == '/presentSimple.html'
 const pastSimple = window.location.pathname == '/pastSimple.html'
 const futureSimple = window.location.pathname == '/futureSimple.html'
 const presentContinuous = window.location.pathname == '/presentContinuous.html'
+const pastContinuous = window.location.pathname == '/pastContinuous.html'
 
-if (presentSimple || pastSimple || futureSimple || presentContinuous) {
+if (presentSimple || pastSimple || futureSimple || presentContinuous || pastContinuous) {
     console.log('Page Grammar')
     scriptsGrammarPage()
 }
