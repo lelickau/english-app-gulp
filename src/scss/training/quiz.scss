@@ -14,6 +14,10 @@
         padding: 20px;
     }
 
+    &__logo {
+        width: 55px;
+    }
+
     &__close {
         width: 40px;
         height: 40px;
@@ -40,6 +44,8 @@
     }
 
     &__ico-descr {
+        width: 71px;
+        height: 71px;
         margin-right: 12px;
     }
 
@@ -82,9 +88,7 @@
         cursor: pointer;
         width: 55px;
         height: 55px;
-        &:first-child {
-            margin-right: 20px;
-        }
+
     }
 
     &__word {
@@ -126,4 +130,93 @@
         visibility: hidden;
     }
 }
+@media (max-width: 1024px) {
+    .quiz{
+        &__item {
+            padding: 60px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .quiz{
+        &__options {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            padding: 45px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .quiz{
+        &__header {
+            padding: 10px;
+        }
 
+        &__logo {
+            width: 40px;
+        }
+
+        &__description {
+            padding: 25px;
+        }
+
+        &__item {
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz{
+        &__console-ico {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__console {
+            justify-content: flex-start;
+        }
+
+        &__audio-ico {
+            margin-right: 10px;
+        }
+        &__word {
+            order: 1;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .quiz{
+        &__content-descr {
+            align-items: start;
+        }
+
+        &__ico-descr {
+            width: 51px;
+            height: 51px;
+            margin-right: 12px;
+        }
+
+        &__audio-ico {
+            margin-right: 0;
+            justify-self: end;
+        }
+
+        &__btn-start {
+            margin-top: 30px;
+        }
+
+        &__console {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: stretch;
+            grid-gap: 10px;
+
+        }
+        &__word {
+            grid-column: 1/-1;
+        }
+    }
+}

@@ -20,9 +20,11 @@ export const scriptsGrammarPage = () => {
 
 
     const tenseContent = document.querySelector('.tense__content')
-    tenseContent.style.cssText = `
-        height: ${getHeightForContent()}px;
-    `
+    if (window.innerWidth > 640) {
+        tenseContent.style.cssText = `
+            height: ${getHeightForContent()}px;
+        `
+    }
 
     const visibilityNextArrow = (val) => {
         if (val) {
@@ -65,6 +67,9 @@ export const scriptsGrammarPage = () => {
 
         slides[startIndex - 1].style.display = "block"
         content.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        if (window.innerWidth <= 640) {
+            window.scrollTo(screenY, 0)
+        }
         dots[startIndex - 1].className += " tense__dot--active"
     }
 

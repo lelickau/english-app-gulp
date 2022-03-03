@@ -1,12 +1,10 @@
 @import '../variables';
 
 .verb {
-    width: 685px;
-    width: calc(1/2*100% - 30px);
     padding: 24px;
     margin: 15px;
     @include box-border-shadow;
-    
+
     &__title {
         padding: 12px;
         background-color: $box;
@@ -21,3 +19,14 @@
         color: $box;
     }
 }
+
+@media (max-width: 470px) {
+    .verb  {
+        margin: 10px 0;
+        padding: 20px;
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+}
+

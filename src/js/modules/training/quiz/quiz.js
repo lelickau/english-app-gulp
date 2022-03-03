@@ -43,7 +43,7 @@ export const quizTest = () => {
                         <div class="quiz__console">
                             <img class="quiz__console-ico quiz__show-hint" src="images/question.svg" alt="Подсказка">
                             <div class="quiz__word">${item.id}</div>
-                            ${item.mp3 ? `<img class="believe__console-ico believe__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">`: "<div class='quiz__console-ico'></div>"}
+                            ${item.mp3 ? `<img class="quiz__console-ico quiz__audio-ico" src="images/audio.svg" alt="Audio" data-audio-src="${item.mp3}">`: "<div class='quiz__console-ico'></div>"}
                         </div>
                     </div>
                     <div class="quiz__options">

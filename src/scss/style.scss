@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -16,9 +19,7 @@ body {
 body {
     font-family: 'Montserrat', sans-serif;
     color: $text;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
+    @include text-font;
 }
 
 a {
@@ -100,10 +101,22 @@ a {
 @import './cards/dictionary.scss';
 
 
-@media (max-height: 720px) {
+@media (max-width: 1024px) {
     .main {
-        padding-top: 120px;
-        padding-bottom: 27px;
+        padding-top: 85px;
+        padding-bottom: 15px;
     }
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding-top: 35px;
+    }
+}
+
+
+
+@media (max-height: 720px) {
+
 }
 

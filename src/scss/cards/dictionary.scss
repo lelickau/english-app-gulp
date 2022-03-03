@@ -35,6 +35,10 @@
         flex-direction: column;
     }
 
+    &__item-box + &__item-box {
+        margin-top: 23px;
+    }
+
     &__item {
         position: relative;
         z-index: 10;
@@ -44,7 +48,10 @@
         justify-content: space-between;
         background-color: $bright_3;
         @include box-border-shadow;
-        margin-top: 23px;
+    }
+
+    &__console {
+        display: flex;
     }
 
     &__audio-img,
@@ -86,5 +93,43 @@
 
     &__audio-null {
         visibility: hidden;
+    }
+}
+
+@media (max-width: 470px) {
+    .dictionary {
+        &__content {
+            padding: 15px;
+        }
+
+        &__item-box + &__item-box {
+            margin-top: 15px;
+        }
+
+        &__word-box {
+            margin-left: 15px;
+        }
+
+        &__console {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .dictionary {
+        &__item {
+            align-items: start;
+            flex-direction: column-reverse;
+        }
+
+        &__word-box {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        &__console {
+            flex-direction: row;
+        }
     }
 }

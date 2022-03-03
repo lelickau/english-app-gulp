@@ -17,16 +17,53 @@ $pastel_4: #FFF2F9; // pastel respberry
 
 //+
 @mixin title-font {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 800;
+    @media (max-width: 1920px){
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 800;
+    }
+    @media (max-width: 1360px){
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 800;
+    }
+    @media (max-width: 720px){
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 800;
+    }
 }
 
 //+
 @mixin subtitle-font {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 700;
+    @media (max-width: 1920px){
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    @media (max-width: 1360px){
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    @media (max-width: 720px){
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+}
+//+
+@mixin text-font {
+    @media (max-width: 1920px){
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    @media (max-width: 1360px){
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
 }
 
 //+
@@ -55,6 +92,13 @@ $pastel_4: #FFF2F9; // pastel respberry
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
+    
+    @media (max-width: 720px){
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        padding: 12px 30px;
+    }
 }
 //
 @mixin wrapper-top {

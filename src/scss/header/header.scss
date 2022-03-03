@@ -10,6 +10,10 @@
     @include box-border-shadow;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .menu {
     height: 70px;
     display: flex;
@@ -33,5 +37,43 @@
 
     &__link {
         display: inline-block;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        cursor: pointer;
+        width: 82px;
+        height: auto;
+        right: auto;
+    }
+
+    .mobile-menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include title-font;
+
+    }
+
+    .menu {
+       display: none;
+       padding: 20px;
+       height: auto;
+       border-radius: 8px;
+        //height: 122px;
+        width: 230px;
+        flex-direction: column;
+        background-color: $box;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+        }
     }
 }

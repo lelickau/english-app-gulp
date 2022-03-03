@@ -6,9 +6,11 @@ export const createContentDictionary = (topicData) => {
         const elem = `
         <div class="dictionary__item-box">
             <div class="dictionary__item">
-                <img class="dictionary__example-img show-example" src="images/question.svg" alt="hint" />
-                <div class="dictionary__audio ${!topicData[i].mp3 && ' dictionary__audio-null'}" data-audio-src="${topicData[i].mp3}">
-                    <img class="dictionary__audio-img" src="images/audio.svg" alt="audio" />
+                <div class="dictionary__console">
+                    <img class="dictionary__example-img show-example" src="images/question.svg" alt="hint" />
+                    <div class="dictionary__audio ${!topicData[i].mp3 && ' dictionary__audio-null'}" data-audio-src="${topicData[i].mp3}">
+                        <img class="dictionary__audio-img" src="images/audio.svg" alt="audio" />
+                    </div>
                 </div>
                 <p class="dictionary__word-box">
                     <span class="dictionary__word">${topicData[i].id}</span> -

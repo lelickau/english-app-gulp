@@ -15,12 +15,17 @@
 
     &__items {
         cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0 -5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 30px;
         margin-bottom: 37px;
+    }
+
+    &__title {
+        background-color: $bright_1;
+        border-radius: 8px;
+        padding: 10px;
+        color: $box;
     }
 
     &__hidden {
@@ -29,11 +34,18 @@
 
 }
 
-
 /*media*/
-@media (max-width: 1360px) {
-    .tenses {
-        grid-template-columns: repeat(3, 378px);
+
+
+@media (max-width: 1090px) {
+    .grammar  {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
     }
 }
+
+
 

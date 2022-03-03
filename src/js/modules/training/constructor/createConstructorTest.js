@@ -3,7 +3,7 @@ import { cteateIndexData } from '../cteateIndexData.js'
 
 export const createConstructorTest = () => {
     const dataTest = []
-    const randomIdx = cteateIndexData(3, a1.length)
+    const randomIdx = cteateIndexData(10, a1.length)
 
     randomIdx.forEach(idx => {
         const construct = [...a1[idx].id].sort()

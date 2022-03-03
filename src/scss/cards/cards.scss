@@ -11,6 +11,7 @@
 .cards {
     &__title {
         position: relative;
+        margin-bottom: 45px;
         padding: 10px;
         @include title-font;
         @include box-border-shadow ;
@@ -21,17 +22,17 @@
     }
 
     &__topics {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-gap: 15px;
     }
 
     &__topics-item {
         cursor: pointer;
         position: relative;
-        width: 270px;
+        width: 100%;
         height: 205px;
-        margin-top: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,4 +55,33 @@
         display: none;
     }
 
+}
+
+@media (max-width: 1160px) {
+    .cards {
+        &__topics {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+}
+@media (max-width: 870px) {
+    .cards {
+        &__topics {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+}
+@media (max-width: 470px) {
+    .cards {
+        &__topics {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+    }
 }

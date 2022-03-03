@@ -13,7 +13,6 @@
     height: 100%;
     display: grid;
     grid-gap: 40px;
-    grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -54,4 +53,21 @@
         color: $box;
         text-align: center;
     }
+}
+
+@media (max-width: 1280px) {
+    .training {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 800px) {
+    .training {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 380px) {
+    .results {
+        width: 230px;
+    }
+
 }

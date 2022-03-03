@@ -130,3 +130,147 @@
         display: none;
     }
 }
+
+@media (max-width: 1360px) {
+    .auth {
+        &__login,
+        &__signup {
+            width: 525px;
+        }
+
+        &__auth {
+            width: 435px;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .auth {
+        &__login,
+        &__signup {
+            width: 425px;
+        }
+
+        &__auth {
+            width: 335px;
+            padding: 25px 15px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__change-create,
+        &__change-auth {
+            margin-top: 15px;
+        }
+        &__greeting-item:nth-child(odd)> &__greeting-text {
+            margin-left: 25px;
+        }
+
+        &__greeting-item:nth-child(even)> &__greeting-text {
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .auth {
+        flex-direction: column;
+        align-items: center;
+
+        &__login,
+        &__signup {
+            width: 525px;
+        }
+
+        &__auth {
+            width: 435px;
+        }
+
+        &__greeting-item {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+@media (max-width: 576px) {
+    .auth {
+        &__login,
+        &__signup {
+            width: 425px;
+        }
+
+        &__auth {
+            width: 335px;
+        }
+    }
+
+}
+
+@media (max-width: 456px) {
+    .auth {
+        &__login,
+        &__signup {
+            padding: 25px;
+            width: 325px;
+        }
+
+        &__auth {
+            width: 235px;
+        }
+
+        &__greeting-img {
+            width: 45px;
+        }
+
+        &__greeting-text {
+            padding: 20px;
+        }
+    }
+
+}
+@media (max-width: 370px) {
+    .auth {
+        &__login,
+        &__signup {
+            padding: 25px;
+            width: 275px;
+        }
+
+        &__auth {
+            width: 230px;
+        }
+
+        &__greeting-img {
+            width: 35px;
+        }
+
+        &__greeting-text {
+            padding: 20px;
+        }
+
+        &__greeting-item:nth-child(even)> &__greeting-text::after {
+            border-left: 18px solid #fff;
+            border-bottom: 3px solid transparent;
+            right: -18px;
+            bottom: 13px;
+        }
+
+        &__greeting-item:nth-child(odd)> &__greeting-text::after {
+            border-right: 18px solid #fff;
+            border-bottom: 3px solid transparent;
+            left: -18px;
+            bottom: 13px;
+        }
+
+        &__greeting-item:nth-child(odd)> &__greeting-text {
+            margin-left: 18px;
+        }
+
+        &__greeting-item:nth-child(even)> &__greeting-text {
+            margin-right: 18px;
+        }
+    }
+}

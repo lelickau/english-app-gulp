@@ -57,3 +57,20 @@
         display: none;
     }
 }
+
+@media (max-width: 420px) {
+    .progress {
+        &__quiz,
+        &__constructor {
+            flex-direction: column-reverse;
+            align-items: start;
+        }
+
+        &__quiz > .progress__points,
+        &__quiz, > .progress__points{
+            margin-top: 10px;
+        }
+
+
+    }
+}
