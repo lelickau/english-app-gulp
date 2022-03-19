@@ -1,16 +1,15 @@
-import a1  from '../../../data/data-a1.json'
 import { cteateIndexData } from '../cteateIndexData.js'
 
-export const createConstructorTest = () => {
+export const createConstructorTest = (level) => {
     const dataTest = []
-    const randomIdx = cteateIndexData(10, a1.length)
+    const randomIdx = cteateIndexData(10, level.length)
 
     randomIdx.forEach(idx => {
-        const construct = [...a1[idx].id].sort()
+        const construct = [...level[idx].id].sort()
         const data = {
-            id: a1[idx].id,
-            answer: [...a1[idx].id],
-            translate: a1[idx].translate,
+            id: level[idx].id,
+            answer: [...level[idx].id],
+            translate: level[idx].translate,
             construct
         }
 

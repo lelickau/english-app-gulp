@@ -1,3 +1,4 @@
+import a1 from '../../../data/data-a1.json'
 import { createTestBelieveGame } from "./createTestBelieveGame.js"
 import { playAudio } from "../../audio/play.js"
 import {increasePoints} from '../points.js'
@@ -16,16 +17,17 @@ export const believeGame = () => {
 
     believeTestBlock.classList.remove('believe__hidden')
 
-    const finishTest = (points) => {
-        const finishElem = htmlTestResults('believe', points)
+    const finishTest = (points, level, testData) => {
+        const finishElem = htmlTestResults('believe', points, level, testData)
         questionsBox.innerHTML = ''
         believeOptions.classList.add('believe__hidden')
         questionsBox.appendChild(finishElem)
     }
 
-    const startBelieveGameTest = (e) => {
+    const startBelieveGameTest = (level) => {
         let points = 0
-        const questions = createTestBelieveGame()
+        const testData = []
+        const questions = createTestBelieveGame(level)
 
         if (questions) {
             believeOptions.classList.remove('believe__hidden')
@@ -78,7 +80,7 @@ export const believeGame = () => {
 
                 if (n === questionsItems.length) {
                     clearInterval(downloadTimer)
-                    finishTest(points)
+                    finishTest(points, 'a-1', testData)
                     document.querySelector(".progress__deadline").innerHTML = "0s"
                 } else {
                     questionsItems[startIndex].style.display = "block"
@@ -98,12 +100,15 @@ export const believeGame = () => {
                     answer = e.currentTarget.getAttribute('data-answer')
                 }
                 const questionNumber  = document.querySelector('.active-question').getAttribute('data-index')
+                const id = questions[questionNumber].id
 
                 if (questions[questionNumber].isBelieve === Boolean(answer)) {
                     points = increasePoints(points, 100)
+                    testData.push([id, 25])
                     nextQuestion(startIndex += 1)
 
                 } else {
+                    testData.push([id, -25])
                     nextQuestion(startIndex += 1)
                 }
             }
@@ -112,7 +117,7 @@ export const believeGame = () => {
             const downloadTimer = setInterval(function(){
                 if(timeleft <= 0){
                     clearInterval(downloadTimer)
-                    finishTest(points)
+                    finishTest(points, 'Beginner', testData)
                     document.querySelector(".progress__deadline").innerHTML = "0s"
                 } else {
                     document.querySelector(".progress__deadline").innerHTML = `${timeleft}s`
@@ -135,5 +140,7 @@ export const believeGame = () => {
     }
 
     closeBelieveGameBtn.addEventListener('click', closeTest)
-    startBelieveGameBtn.addEventListener('click', startBelieveGameTest)
+    startBelieveGameBtn.addEventListener('click', () => {
+        startBelieveGameTest(a1)
+    })
 }

@@ -1,63 +1,16 @@
 @import '../variables';
 
+.wrapper__auth {
+    background-color: $pastel_1;
+    &::after {
+        @include wrapper-top;
+        background-color: $pastel_1;
+    }
+}
+
 .auth {
     display: flex;
     justify-content: space-around;
-    &__greeting-item {
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 53px;
-
-    }
-
-    &__greeting-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    &__greeting-img {
-        width: 65px;
-    }
-
-    &__greeting-text {
-        padding: 32px;
-        border-radius: 8px;
-        background-color: $box;
-        position: relative;
-    }
-
-    &__greeting-item:nth-child(odd)> &__greeting-text {
-        max-width: 547px;
-        margin-left: 40px;
-    }
-
-    &__greeting-item:nth-child(even)> &__greeting-text {
-        max-width: 447px;
-        margin-right: 40px;
-    }
-
-    &__greeting-item:nth-child(even)> &__greeting-text::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-top: 15px solid transparent;
-        border-left: 25px solid $box;
-        border-bottom: 10px solid transparent;
-        right: -25px;
-        bottom: 25px;
-    }
-
-    &__greeting-item:nth-child(odd)> &__greeting-text::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-top: 15px solid transparent;
-        border-right: 25px solid $box;
-        border-bottom: 10px solid transparent;
-        left: -25px;
-        bottom: 25px;
-    }
 
     &__auth {
         margin-left: 58px;
@@ -78,17 +31,22 @@
     }
 
     &__login,
-    &__signup {
+    &__signup,
+    &__forgot,
+    &__recover {
         width: 626px;
         @include box-border-shadow;
         padding: 44px;
         position: relative;
-        background-color: $bright_4;
+        background-color: $bright_1;
+    }
+
+    &__label {
+        display: block;
+        width: 100%;
     }
 
     &__label + &__label {
-        display: block;
-        width: 100%;
         margin-top: 36px;
     }
 
@@ -101,7 +59,7 @@
     }
 
     &__input::placeholder {
-        color: $bright_4;
+        color: $bright_2;
     }
 
     &__recover-pass {
@@ -113,10 +71,11 @@
 
     &__btn {
         @include default-btn;
-        @include shadow-btn_4;
+        @include shadow-btn_1;
         margin: 0 auto;
         background-color: $box;
         margin-top: 29px;
+        color: $text;
     }
 
     &__change-create,
@@ -126,15 +85,61 @@
         @include subtitle-font;
     }
 
+    &__label {
+        position: relative;
+    }
+
+    &__toggle-pass,
+    &__toggle-repeat-pass {
+        width: 35px;
+        position: absolute;
+        z-index: 10;
+        bottom: 11px;
+        right: 8px;
+    }
+
+    &__show-pass-img,
+    &__show-repeat-pass-img {
+        width: 30px;
+        margin-bottom: 4px;
+    }
+
+    &__hide-pass-img,
+    &__hide-repeat-pass-img {
+        width: 28px;
+    }
+
     &__hidden {
         display: none;
+    }
+
+    &__error {
+        margin-top: 25px;
+        text-align: center;
+        color: $box;
+    }
+
+    &__link {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    &__error-msg {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 25px;
+        color: $box;
     }
 }
 
 @media (max-width: 1360px) {
     .auth {
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             width: 525px;
         }
 
@@ -148,7 +153,9 @@
 @media (max-width: 1024px) {
     .auth {
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             width: 425px;
         }
 
@@ -165,13 +172,6 @@
         &__change-auth {
             margin-top: 15px;
         }
-        &__greeting-item:nth-child(odd)> &__greeting-text {
-            margin-left: 25px;
-        }
-
-        &__greeting-item:nth-child(even)> &__greeting-text {
-            margin-right: 25px;
-        }
     }
 }
 
@@ -181,16 +181,14 @@
         align-items: center;
 
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             width: 525px;
         }
 
         &__auth {
             width: 435px;
-        }
-
-        &__greeting-item {
-            margin-bottom: 30px;
         }
     }
 
@@ -198,7 +196,9 @@
 @media (max-width: 576px) {
     .auth {
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             width: 425px;
         }
 
@@ -212,7 +212,9 @@
 @media (max-width: 456px) {
     .auth {
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             padding: 25px;
             width: 325px;
         }
@@ -220,21 +222,15 @@
         &__auth {
             width: 235px;
         }
-
-        &__greeting-img {
-            width: 45px;
-        }
-
-        &__greeting-text {
-            padding: 20px;
-        }
     }
 
 }
 @media (max-width: 370px) {
     .auth {
         &__login,
-        &__signup {
+        &__signup,
+        &__forgot,
+        &__recover {
             padding: 25px;
             width: 275px;
         }
@@ -243,34 +239,14 @@
             width: 230px;
         }
 
-        &__greeting-img {
-            width: 35px;
+        &__password,
+        &__repeatPassword {
+            padding: 11px 35px 11px 10px;
         }
 
-        &__greeting-text {
-            padding: 20px;
-        }
-
-        &__greeting-item:nth-child(even)> &__greeting-text::after {
-            border-left: 18px solid #fff;
-            border-bottom: 3px solid transparent;
-            right: -18px;
-            bottom: 13px;
-        }
-
-        &__greeting-item:nth-child(odd)> &__greeting-text::after {
-            border-right: 18px solid #fff;
-            border-bottom: 3px solid transparent;
-            left: -18px;
-            bottom: 13px;
-        }
-
-        &__greeting-item:nth-child(odd)> &__greeting-text {
-            margin-left: 18px;
-        }
-
-        &__greeting-item:nth-child(even)> &__greeting-text {
-            margin-right: 18px;
+        &__toggle-pass,
+        &__toggle-repeat-pass {
+            right: 0;
         }
     }
 }

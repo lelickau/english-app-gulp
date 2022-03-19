@@ -1,0 +1,9 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('Till и until - пока не', 'I will have been watching TV until you come. — Я буду смотреть телевизор, пока ты не придешь.')
+            +grammar-list('for hours - в течение', 'When you arrive, Julia will have been working for 5 hours. — Когда ты прибудешь, Юлия будет работать уже 5 часов.')
+            +grammar-list('by the end of the .. - к концу ..', 'By the end of the hour she will have been waiting for him for 30 minutes. — К концу часа она будет ждать его на протяжении 30 минут.')
+

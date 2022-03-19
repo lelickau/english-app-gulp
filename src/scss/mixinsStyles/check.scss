@@ -1,0 +1,38 @@
+@import '../_variables.scss';
+
+.check-box {
+    width: 24px;
+    height: 24px;
+}
+
+.check {
+    @include box-border-shadow;
+    background-color: $success;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    &__sing {
+        position: absolute;
+        background-color: $box;
+    }
+
+    #check__part-1 {
+        width: 6px;
+        height: 2px;
+        left: 4px;
+        top: 12px;
+        border-radius: 9px;
+        transform: rotate(45deg);
+    }
+
+    #check__part-2 {
+        width: 11px;
+        height: 2px;
+        border-radius: 9px;
+        transform: rotate(-48deg);
+        left: 6px;
+        top: 10px;
+    }
+}

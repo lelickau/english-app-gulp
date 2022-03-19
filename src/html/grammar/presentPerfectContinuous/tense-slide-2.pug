@@ -1,0 +1,9 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('for - в течение', 'I have been writing this essay for 2 days and I have not finished it yet - Я пишу это эссе уже 2 дня и еще не закончил его')
+            +grammar-list('since - с', 'John has been reading this book since early morning - Джон с раннего утра читает эту книгу')
+            +grammar-list('all day / week - весь день / неделю', 'I have been thinking about what you said all day - Я весь день думаю о том, что ты сказал')
+            +grammar-list('recently - в последнее время', 'I have heard a lot about you recently. – Я много слышал о тебе в последнее время.')

@@ -1,5 +1,6 @@
 import { getTopicData } from "./getTopicData.js"
 import { createContentDictionary } from "./createContentDictionary.js"
+import { playAudio } from "../audio/play.js"
 
 export const scriptCardsPage = () => {
     const cards = document.querySelector('.cards')
@@ -24,7 +25,6 @@ export const scriptCardsPage = () => {
 
     const openTopic = (e) => {
         const dictionaryTitleBox = document.querySelector('.dictionary__title')
-
         const topicName = e.currentTarget.getAttribute('data-topic')
         const topicLevel = e.currentTarget.getAttribute('data-level')
         const topicTitle = e.currentTarget.getAttribute('data-title')
@@ -41,6 +41,13 @@ export const scriptCardsPage = () => {
 
         const showExampleBtn = document.querySelectorAll('.show-example')
         showExampleBtn.forEach(btn => btn.addEventListener('click', showExample))
+
+        const audioBtns = document.querySelectorAll('.dictionary__audio')
+        audioBtns.forEach(btn => btn.addEventListener('click', (e) => {
+            playAudio(e.currentTarget.getAttribute('data-audio-src'))
+        }))
+
+        window.scrollTo(screenY, 0)
     }
 
     topicsBtn.forEach(btn => {

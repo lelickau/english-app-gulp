@@ -1,0 +1,9 @@
+include ../../mixins/grammar-tense-item
+.tense__main
+    h5.tense__main-title Указатели времени
+    nav.tense__list
+        ul.tense__list-box
+            +grammar-list('by… – к какому-то времени/моменту', 'Bob and Mary will have built a new garage by the next year. — Боб и Мэри построят новый гараж к следующему году.')
+            +grammar-list('by then – к тому времени', 'They will have built this house by then. – Они построят этот дом к тому времени.')
+            +grammar-list('until/till – до того как — используются только в отрицательных предложениях', 'He won’t have stopped playing until you distract him. – Он не закончит играть, пока ты его отвлекаешь.')
+

@@ -7,7 +7,6 @@ import { createTestQuiz } from './createQuizTest.js'
 import { htmlTestResults } from '../htmlTestResults.js'
 
 export const quizTest = () => {
-    const trainingMenu = document.querySelector('.training')
 
     const quizTestBlock = document.querySelector('.quiz')
     const startQuizBtn = document.querySelector('.quiz__btn-start')
@@ -18,9 +17,15 @@ export const quizTest = () => {
 
     quizTestBlock.classList.remove('quiz__hidden')
 
-    const startQuizTest = () => {
+    const finishTesting = (points, level, testData) => {
+        const finishElem = htmlTestResults('quiz', points, level, testData)
+        questionsBox.appendChild(finishElem)
+    }
+
+    const startQuizTest = (level) => {
         let points = 0
-        const questions = createTestQuiz(a1) // //*
+        const testData = []
+        const questions = createTestQuiz(level) // //*
 
         if (questions) {
             const quizHeader = document.querySelector('.quiz__header')
@@ -77,11 +82,6 @@ export const quizTest = () => {
                 })
             })
 
-            const finishTesting = () => {
-                const finishElem = htmlTestResults('quiz', points)
-                questionsBox.appendChild(finishElem)
-            }
-
             let startIndex = 0
             const nextQuestion = (n) => {
                 const questionsItems = document.querySelectorAll('.quiz__item')
@@ -92,7 +92,7 @@ export const quizTest = () => {
                 }
 
                 if (n === questionsItems.length) {
-                    finishTesting()
+                    finishTesting(points, 'Beginner', testData)
                 } else {
                     questionsItems[startIndex].style.display = "block"
                 }
@@ -105,14 +105,17 @@ export const quizTest = () => {
                 btn.addEventListener('click', () => {
                     const questionNumber = btn.parentNode.parentNode.getAttribute('data-index')
                     const answer = btn.getAttribute('data-answer')
+                    const id = questions[questionNumber].id
 
                     if (questions[questionNumber].translate === answer) {
                         checkingAnswar(questions.length -1, startIndex)
-                        points = increasePoints(points, 10)
+                        points = increasePoints(points, 100)
+                        testData.push([id, 25])
                         nextQuestion(startIndex += 1)
 
                     } else {
                         checkingAnswar(questions.length -1, startIndex, false)
+                        testData.push([id, -25])
                         nextQuestion(startIndex += 1)
                     }
                 })
@@ -126,5 +129,7 @@ export const quizTest = () => {
 
     closeQuizBtn.addEventListener('click', closeTest)
 
-    startQuizBtn.addEventListener('click', startQuizTest)
+    startQuizBtn.addEventListener('click', () => {
+        startQuizTest(a1)
+    })
 }

@@ -47,6 +47,7 @@
 
     &__header {
         position: absolute;
+        z-index: 10;
         top: -5px;
         left: 0;
         right: 0;
@@ -181,16 +182,67 @@
         margin-bottom: 13px;
     }
 
-    &__explanations-img {
-        width: 33px;
-        height: 33px;
-        margin-right: 6px;
+    &__explanations-ico {
+        position: relative;
+        min-width: 45px;
+        min-height: 45px;
+        background-color: $box;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 800;
+        @include box-shadow-svg;
+        color: $bright_1;
+    }
+
+    &__explanations-ico.ico-s,
+    &__explanations-ico.ico-2,
+    &__explanations-ico.ico-3 {
+        justify-content: start;
+        padding-left: 13px;
+        &::after {
+            position: absolute;
+            color: $bright_1;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 700;
+            bottom: 4px;
+            right: 10px;
+        }
+    }
+
+    &__explanations-ico.ico-s {
+        &::after {
+            content: 's';
+        }
+    }
+    &__explanations-ico.ico-2 {
+        &::after {
+            content: '2';
+            font-size: 15px;
+            right: 11px;
+        }
+    }
+    &__explanations-ico.ico-3 {
+        &::after {
+            content: '3';
+            font-size: 15px;
+            right: 11px;
+        }
+    }
+
+    &__explanations-ico.ico-tobe {
+        font-size: 15px;
     }
 
     &__explanations-description {
         font-weight: 300;
         font-size: 18px;
         line-height: 23px;
+        margin-left: 6px;
     }
 
     &__scheme {
@@ -204,15 +256,17 @@
         margin-bottom: 30px;
     }
 
+    &__verb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     &__scheme-img {
         min-width: 48px;
         min-height: 48px;
         margin-right: 30px;
-    }
-
-    &__verb-img {
-        min-width: 48px;
-        min-height: 48px;
     }
 
     &__scheme-subjects {
@@ -220,7 +274,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     &__subjects-item,
@@ -231,13 +285,13 @@
 
     &__scheme-arrow {
         min-width: 52px;
-        margin-right: 22px;
+        margin-right: 20px;
     }
 
     &__small-arrow {
         width: 33px;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     &__examples {
@@ -246,6 +300,7 @@
         padding: 24px 30px;
         display: flex;
         flex-direction: column;
+        margin-top: 15px;
     }
 
     &__examples-item {
@@ -300,7 +355,6 @@
 
         &__header {
             position: relative;
-            z-index: 10;
         }
 
         &__scheme-arrow,
@@ -351,6 +405,32 @@
         &__header-title{
             display: none;
         }
+
+        &__content {
+            padding: 20px 10px;
+        }
+    }
+
+}
+@media (max-width: 900px) {
+    .tense {
+        &__arrow-prev-img,
+        &__arrow-next-img {
+            width: 35px;
+            height: 35px;
+        }
+        &__arrow-prev,
+        &__arrow-next {
+            z-index: 11;
+            position: fixed;
+            top: 5px;
+        }
+        &__arrow-prev {
+            right: 60px;
+        }
+        &__arrow-next {
+            right: 15px;
+        }
     }
 
 }
@@ -364,7 +444,6 @@
         }
         &__content {
             overflow-y: inherit;
-            padding: 20px 10px;
         }
         &__main-title {
             padding: 14px 10px;
@@ -384,24 +463,7 @@
         &__dot-progress-line {
             width: 5px;
         }
-        &__arrow-prev-img,
-        &__arrow-next-img {
-            width: 35px;
-            height: 35px;
-        }
-        &__arrow-prev,
-        &__arrow-next {
-            z-index: 11;
-            position: fixed;
-            top: 5px;
-        }
-        &__arrow-prev {
-            right: 60px;
-        }
-        &__arrow-next {
-            right: 15px;
 
-        }
 
     }
 

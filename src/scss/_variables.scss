@@ -1,13 +1,15 @@
 // +
 $text: #222831;
 $box: #fff;
+$success: #78E08F;
+$error: #F67463;
 
 //+
 $bright_1: #26C1FC; // blue
 $pastel_1: #DDF5FF; // pastel blue
 
 $bright_2: #BF8FFD; // violet
-$pastel_2: #F2EAFF; // pastel violet
+$pastel_2: #e6e6e6; // pastel violet
 
 $bright_3: #F5A72B; // orange
 $pastel_3: #FFEBCB; // pastel orange
@@ -92,7 +94,7 @@ $pastel_4: #FFF2F9; // pastel respberry
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
-    
+
     @media (max-width: 720px){
         font-size: 18px;
         line-height: 20px;

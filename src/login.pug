@@ -1,0 +1,31 @@
+include html/mixins
+- var title = "Авторизация в Owl Academy!";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__auth
+            include html/header
+            main.main
+                .container
+                    section.auth
+                        article.auth__auth
+                            h1.auth__title Авторизация
+                            form.auth__login(action="/login.php" method="POST" id="login" novalidate)
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__email(name="email" type="email" placeholder="* Email" autocomplete="username")
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__password(name="password" type="password" placeholder="* Пароль" autocomplete="password")
+                                    span.auth__toggle-pass
+                                        img.auth__show-pass-img(src="@img/show-pass.svg" alt="Show")
+                                        img.auth__hide-pass-img.auth__hidden(src="@img/hide-pass.svg" alt="Hide")
+                                a.auth__recover-pass(href="#") Востановить пароль
+                                button.auth__btn(type="submit" name="do_login") Войти
+                            a.auth__change-create(href="signup.html") Создать аккаунт
+            include html/footer
+

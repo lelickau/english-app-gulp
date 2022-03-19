@@ -1,0 +1,23 @@
+include html/mixins
+- var title = "Восстановить пароль";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__auth
+            include html/header
+            main.main
+                .container
+                    section.auth
+                        article.auth__auth
+                            h1.auth__title Восстановить пароль
+                            form.auth__forgot(action="/forgot.php" method="POST" id="forgot" novalidate)
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__email(name="email" type="email" placeholder="* Email" autocomplete="username")
+                                button.auth__btn(type="submit" name="do_login") Отправить
+                            a.auth__change-create(href="signup.html") Создать аккаунт
+            include html/footer

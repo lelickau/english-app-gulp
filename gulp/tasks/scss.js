@@ -18,7 +18,7 @@ export const scss = () => {
         ))
         .pipe(app.plugins.replace(/@img\//g, '../images/'))
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'compressed'
         }))
         .pipe(
             app.plugins.if(

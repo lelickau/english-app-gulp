@@ -1,3 +1,4 @@
+import a1  from '../../../data/data-a1.json'
 import { htmlTestResults } from "../htmlTestResults.js"
 import { checkingAnswar, increasePoints } from "../points.js"
 import { createProgressBar, createProgressPoint } from "../progressBar.js"
@@ -19,10 +20,17 @@ export const constructorGame = () => {
         `
     }
 
-    const startConstructorTest = (e) => {
+    const finishTesting = (points, level, testData) => {
+        if (points < 0) points = 0
+
+        const finishElem = htmlTestResults('constructor', points, level, testData)
+        questionsBox.appendChild(finishElem)
+    }
+
+    const startConstructorTest = (level) => {
         let points = 0
-        const questions = createConstructorTest()
-        console.log(questions)
+        const testData = []
+        const questions = createConstructorTest(level)
 
         if (questions) {
             const constructorHeader = document.querySelector('.constructor__header')
@@ -63,11 +71,6 @@ export const constructorGame = () => {
                 questionsBox.appendChild(elem)
             })
 
-            const finishTesting = () => {
-                const finishElem = htmlTestResults('constructor', points)
-                questionsBox.appendChild(finishElem)
-            }
-
             let startIndex = 0
             const nextQuestion = (n) => {
                 const questionsItems = document.querySelectorAll('.constructor__item')
@@ -78,7 +81,7 @@ export const constructorGame = () => {
                 }
 
                 if (n === questionsItems.length) {
-                    finishTesting()
+                    finishTesting(points, 'Beginner', testData)
                 } else {
                     questionsItems[startIndex].style.display = "block"
                 }
@@ -115,6 +118,7 @@ export const constructorGame = () => {
                 const questionData = questions[answerIdx]
                 const lengthAnswer = answerData.length
                 let answarFinish = ''
+                const id = questionData.id
 
                 if (btnLetter === questionData.answer[lengthAnswer]) {
                     answarFinish += answerData + btnLetter
@@ -125,6 +129,11 @@ export const constructorGame = () => {
                     answerBox.insertAdjacentHTML('beforeend', word)
                     if (answarFinish === questionData.id) {
                         const mistake = answerBox.getAttribute('data-mistake')
+                        if (mistake) {
+                            testData.push([id, -25])
+                        } else {
+                            testData.push([id, 25])
+                        }
                         showCorrectAnswer(mistake)
                         setTimeout(() => {
                             checkingAnswar(questions.length -1, startIndex, Boolean(!mistake))
@@ -148,5 +157,7 @@ export const constructorGame = () => {
     }
 
     closeConstructorGameBtn.addEventListener('click', closeTest)
-    startConstructorGameBtn.addEventListener('click', startConstructorTest)
+    startConstructorGameBtn.addEventListener('click', () => {
+        startConstructorTest(a1)
+    })
 }

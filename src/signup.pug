@@ -1,0 +1,41 @@
+include html/mixins
+- var title = "Регистрация в Owl Academy!";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__auth
+            include html/header
+            main.main
+                .container
+                    section.auth
+                        article.auth__auth
+                            h1.auth__title Регистрация
+                            form.auth__signup(action="/signup.php" method="POST" id="signup" novalidate)
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__username(name="login" type="text" placeholder="* Логин" autocomplete="login")
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__email(name="email" type="email" placeholder="* Email" autocomplete="username")
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__password(name="password" type="password" placeholder="* Пароль" autocomplete="password")
+                                    span.auth__toggle-pass
+                                        img.auth__show-pass-img(src="@img/show-pass.svg" alt="Show")
+                                        img.auth__hide-pass-img.auth__hidden(src="@img/hide-pass.svg" alt="Hide")
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__repeatPassword(name="repeat_password" type="password" placeholder="* Повторить пароль" autocomplete="password")
+                                    span.auth__toggle-repeat-pass
+                                        img.auth__show-repeat-pass-img(src="@img/show-pass.svg" alt="Show")
+                                        img.auth__hide-repeat-pass-img.auth__hidden(src="@img/hide-pass.svg" alt="Hide")
+                                button.auth__btn(type="submit" name="do_signup") Регистрация
+                            a.auth__change-auth(href="/signup.html") У меня есть аккаунт
+
+
+            include html/footer
+

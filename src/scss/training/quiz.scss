@@ -58,6 +58,14 @@
         @include shadow-btn_2;
     }
 
+    &__btn-end {
+        margin: 0 auto;
+        margin-top: 25px;
+        @include default-btn;
+        background-color: $box;
+        color: $text;
+    }
+
     //
     &__item {
         padding-top: 60px;

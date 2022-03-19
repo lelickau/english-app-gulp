@@ -1,8 +1,11 @@
+import { checkedAuth } from "./checkedAuth.js"
 import { getResult } from "./testResults.js"
 
-export const htmlTestResults = (testName, points) => {
-    const result = getResult(testName, points)
+export const htmlTestResults = (testName, points, level, testData=[]) => {
+    const auth = checkedAuth()
 
+    const result = getResult(testName, points)
+    const dataStr = JSON.stringify(testData)
     const finishElem = document.createElement('article')
     finishElem.className = 'results'
 
@@ -21,6 +24,12 @@ export const htmlTestResults = (testName, points) => {
             </div>
             </div>
             <div class="results__point-text">${result[0].text}</div>
+            <form action='/trainings' method="post">
+                <input type="hidden" name="points" value="${points}">
+                <input type="hidden" name="data" value='${dataStr}'>
+                <input type="hidden" name="level" value='${level}'>
+                ${ auth ? '<button class="quiz__btn-end" name="points-btn" type="submit">Завершить</button>' : '<p class="auth__error">Для сохранения прогресса следует <a class="home__auth-link" href="/login">авторизоваться</a></p>'}
+            </form>
     `
 
     return finishElem

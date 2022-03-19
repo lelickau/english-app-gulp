@@ -66,11 +66,8 @@
             align-items: start;
         }
 
-        &__quiz > .progress__points,
-        &__quiz, > .progress__points{
-            margin-top: 10px;
+        &__bar{
+            margin-bottom: 10px;
         }
-
-
     }
 }

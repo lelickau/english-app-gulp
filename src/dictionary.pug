@@ -1,0 +1,30 @@
+include html/mixins
+- var title = "Мой словарь";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__words
+            include html/header
+            main.main
+                .container
+                    section.words
+                        article.words__item
+                            h2.words__level Basic
+                            .words__content
+                                .words__word
+                                    .words__title apple
+                                    .words__progress
+                                        .words__progress-inside
+                                .words__word
+                                    .words__title orange
+                                    .words__progress
+                                        .words__progress-inside
+
+
+
+
+            include html/footer

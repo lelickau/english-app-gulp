@@ -3,11 +3,15 @@ include html/mixins
 html
     include html/head
     body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
         .wrapper.wrapper__training
             include html/header
             main.main
                 .container
-                    section.training
+                    section.training(data-auth="")
                         article.training__item.quiz-test
                             img(class="training__ico" src="@img/quiz.svg", alt="`Quiz")
                             h3.training__title Викторина

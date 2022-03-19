@@ -131,7 +131,7 @@
         "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/veal--_gb_2.mp3",
         "thema": "meat",
         "partOfSpeech": "noun",
-        "example": "She roasted red veal, and powdered lean beef. - Она зажарила свежую телятину и засолила постную говядину. ",
+        "example": "She roasted red veal, and powdered lean beef. - Она зажарила свежую телятину и засолила постную говядину.",
         "definitions": "the flesh of a young calf, used as food."
     },
     {
@@ -455,7 +455,7 @@
         "mp3": "//ssl.gstatic.com/dictionary/static/sounds/20200429/pumpkin--_gb_1.mp3",
         "thema": "vegetables",
         "partOfSpeech": "noun",
-        "example": "That's an almighty large pumpkin you've grown there. - Ох и здоровенную тыкву ты там вырастил. ",
+        "example": "That's an almighty large pumpkin you've grown there. - Ох и здоровенную тыкву ты там вырастил.",
         "definitions": "a large rounded orange-yellow fruit with a thick rind, the flesh of which can be used in sweet or savoury dishes."
     },
     {
@@ -482,7 +482,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/apple-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Sweetest apple you'll ever taste. - Самое сладкое яблоко, которые вам доводилось пробовать.",
         "definitions": "A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates."
     },
     {
@@ -491,7 +491,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I got to turn my peach into a nectarine. - Мне надо превратить мой персик в нектарин.",
         "definitions": "A cultivar of the peach distinguished by its skin being smooth, not fuzzy."
     },
     {
@@ -500,7 +500,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Avocados are the fruit of the avocado tree. - Авокадо - это плод дерева авокадо.",
         "definitions": "The large, usually yellowish-green or black, pulpy fruit of the avocado tree."
     },
     {
@@ -509,7 +509,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I found an orange and half a granola bar. Sweet. - Я нашел апельсин, и пол батончика мюсли",
         "definitions": "An evergreen tree of the genus Citrus such as Citrus sinensis."
     },
     {
@@ -518,7 +518,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/apricot-au.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I found an apricot on my way here. - По дороге сюда я нашла абрикос",
         "definitions": "A round sweet and juicy stone fruit, resembling peach or plum in taste, with a yellow-orange flesh, lightly fuzzy skin and a large seed inside."
     },
     {
@@ -527,7 +527,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/pear-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "We've got wheatgrass, kale and pear smoothie, and coconut water. - Смузи из ростков пшеницы, капусты и груши , на кокосовой воде.",
         "definitions": "An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem."
     },
     {
@@ -536,7 +536,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/banana-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I knew I had to pay for the banana ! - Я знал, что нужно было заплатить за этот банан !",
         "definitions": "An elongated curved tropical fruit that grows in bunches and has a creamy flesh and a smooth skin."
     },
     {
@@ -545,7 +545,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/papaya-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "She gave me a papaya and I sent her a jade. - Она дала мне папайю, а я послал ей янтарь.",
         "definitions": "A tropical American evergreen tree, Carica papaya, having large, yellow, edible fruit"
     },
     {
@@ -554,7 +554,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/date-us.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "And so we'd buy the date, and we'd go home. - И мы покупали финики, и шли домой.",
         "definitions": "The fruit of the date palm, Phoenix dactylifera, somewhat in the shape of an olive, containing a soft, sweet pulp and enclosing a hard kernel."
     },
     {
@@ -563,7 +563,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/pineapple-us.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "He brought out two plates of ham, biscuits, and pineapple slices. - Он принес две тарелки с ветчиной, бисквитом и нарезанным ананасом.",
         "definitions": "A tropical plant, Ananas comosus, native to South America, having thirty or more long, spined and pointed leaves surrounding a thick stem."
     },
     {
@@ -572,7 +572,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/fig-us.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "For dessert the Frenchman had a fig souffle and a glass of red wine. - На десерт француз заказал суфле из инжира и стакан красного вина.",
         "definitions": "A fruit-bearing tree or shrub of the genus Ficus that is native mainly to the tropics."
     },
     {
@@ -581,7 +581,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/peach-us.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "You know, she even tastes like a peach. - И на вкус она тоже как персик.",
         "definitions": "A tree (Prunus persica), native to China and now widely cultivated throughout temperate regions, having pink flowers and edible fruit."
     },
     {
@@ -590,7 +590,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Citric acid can be extracted from the juice of oranges, lemons, or grapefruit. - Лимонная кислота может быть извлечена из сока апельсинов, лимонов или грейпфрутов.",
         "definitions": "The tree of the species Citrus paradisi, a hybrid of pomelo (Citrus maxima) and sweet orange."
     },
     {
@@ -599,7 +599,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/plum-us.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Two of your best plum cakes please. - Мне, пожалуйста, два кусочка вашего лучшего сливового пирога.",
         "definitions": "The fruit and its tree."
     },
     {
@@ -608,7 +608,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I used to press the grapes with you. - Я давил виноград вместе с вами.",
         "definitions": "A small, round, smooth-skinned edible fruit, usually purple, red, or green, that grows in bunches on vines of genus Vitis."
     },
     {
@@ -617,7 +617,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "The persimmon is far more than my favorite fruit. - Хурма это гораздо больше, чем мой любимый фрукт.",
         "definitions": "A type of fruit, of orange colour, very sweet, quite astringent when immature."
     },
     {
@@ -626,7 +626,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/kiwi-au.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I'll take a kiwi, sliced up. - Я возьму нарезанный киви.",
         "definitions": "A New Zealander."
     },
     {
@@ -635,7 +635,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/pomegranate-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "There's something about this pomegranate . - Есть что - то особенное в этом гранате.",
         "definitions": "A fruit-bearing shrub or small tree, Punica granatum."
     },
     {
@@ -644,7 +644,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I dribbled Key Lime juice into his glass, then added the Schweppes. - Я накапала ему в стакан лимонного сока и добавила швепса.",
         "definitions": "A deciduous tree of the genus Tilia, especially Tilia × europaea; the linden tree, or its wood."
     },
     {
@@ -653,7 +653,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "The passion fruit's flavor can be compared to that of the guava fruit . - Вкус маракуйи можно сравнить с ароматом гуавы.",
         "definitions": "A plant, passiflora, that produces an edible fruit."
     },
     {
@@ -662,7 +662,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/lemon-uk.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Can I have a mineral water with ice and lemon? - Могу я взять минеральную воду с лимоном и льдом?",
         "definitions": "A yellowish citrus fruit."
     },
     {
@@ -671,7 +671,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/mango-au.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "If you reach out a bit higher, you can pick mangoes. - А если потянуться чуть выше головы, то и манго сорвать легко.",
         "definitions": "A tropical Asian fruit tree, Mangifera indica."
     },
     {
@@ -680,7 +680,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/melon-au.mp3",
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I don't like melon. - Я не люблю дыни.",
         "definitions": "Any of various plants of the family Cucurbitaceae grown for food, generally not including the cucumber."
     },
     {
@@ -689,7 +689,7 @@
         "mp3": null,
         "thema": "fruit",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Taste the yummy red watermelon! - Попробуйте сочный и вкусный красный арбуз!",
         "definitions": "A plant of the species Citrullus lanatus, bearing a melon-like fruit."
     },
     {
@@ -698,8 +698,8 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/blueberry-ca.mp3",
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
-        "definitions": ""
+        "example": "I got you a blueberry bran muffin from the Belwood Bakery. - Я принёс вам кекс с отрубями и голубикой из пекарни Бэлвуд.",
+        "definitions": "An edible round berry belonging to the cowberry family."
     },
     {
         "id": "blackberry",
@@ -707,7 +707,7 @@
         "mp3": null,
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Pancakes with a blackberry drizzle and fresh squeezed orange juice. - Блинчики с ежевичным джемом и свежевыжатый апельсиновый сок.",
         "definitions": "A fruit-bearing shrub of the species Rubus fruticosus and some hybrids."
     },
     {
@@ -716,7 +716,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/cherry-au.mp3",
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "The first cherries of spring. - Первая вишня этой весной.",
         "definitions": "A small fruit, usually red, black or yellow, with a smooth hard seed and a short hard stem."
     },
     {
@@ -725,7 +725,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/currant-uk.mp3",
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Red Currants! - Красная смородина!",
         "definitions": "A small dried grape, usually the Black Corinth grape, rarely more than 4mm diameter when dried."
     },
     {
@@ -734,7 +734,7 @@
         "mp3": null,
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Pass the cranberry sauce. - Передай клюквенный соус.",
         "definitions": "A shrub belonging to the section Vaccinium sect. Oxycoccus of the genus Vaccinium."
     },
     {
@@ -743,7 +743,7 @@
         "mp3": null,
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "In southern Sakhalin, their summer diet consists of currants and chokeberries. - На юге Сахалина их летняя диета состоит из смородины и черноплодной рябины.",
         "definitions": "The fruit of such a shrub."
     },
     {
@@ -752,7 +752,7 @@
         "mp3": null,
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Today, in China, International Goji Berry Day. - Сегодня в Китае празднуют Всемирный день ягоды годжи.",
         "definitions": "Any of flowering species of the genus Lycium."
     },
     {
@@ -761,7 +761,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/gooseberry-au.mp3",
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I hear the gooseberries are doing well this year. - Я слышал, что крыжовник хорош в этом году.",
         "definitions": "A fruit, Ribes uva-crispa, related to the currant."
     },
     {
@@ -770,7 +770,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/raspberry-uk.mp3",
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Ripe raspberries. - Очень спелая малина.",
         "definitions": "The plant Rubus idaeus."
     },
     {
@@ -779,7 +779,7 @@
         "mp3": null,
         "thema": "berry",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "What lovely-looking strawberries. - Какая чудная клубника.",
         "definitions": "The sweet, usually red, edible fruit of certain plants of the genus Fragaria."
     },
     {
@@ -788,7 +788,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Come and try my glair almond cookies. - Может, съедите миндальное печенье?",
         "definitions": "A type of tree nut."
     },
     {
@@ -797,7 +797,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I like cashews. — Я люблю кешью.",
         "definitions": "A tree, Anacardium occidentale, native to northeastern Brazil, now widely grown in tropical climates for its cashew nuts and cashew apples."
     },
     {
@@ -806,7 +806,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/chestnut-au.mp3",
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "There are a lot of chestnut trees and flowers in the city. - В городе много каштанов и цветов .",
         "definitions": "A tree or shrub of the genus Castanea."
     },
     {
@@ -815,7 +815,7 @@
         "mp3": "https://api.dictionaryapi.dev/media/pronunciations/en/hazelnut-us.mp3",
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Is a hazelnut chocolate chip scone with currants. - Это шоколадное печенье с фундуком и смородиной.",
         "definitions": "The fruit of the hazel tree."
     },
     {
@@ -824,7 +824,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Mace and nutmeg are the same plant. - Мацис и мускат это одно и то же растение.",
         "definitions": "An evergreen tree (Myristica fragrans) cultivated in the East Indies for its spicy seeds."
     },
     {
@@ -833,7 +833,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "I was watching a peanut butter commercial on television. - Я смотрел рекламу арахисового масла по телевизору.",
         "definitions": "A legume resembling a nut, the fruit of the plant Arachis hypogaea."
     },
     {
@@ -842,7 +842,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "You would have had the grilled salmon and pine-nut salsa. - Тебе бы понравился лосось на гриле и соус с кедровыми орешками.",
         "definitions": "The edible seed of any of several species of evergreen pine, especially Pinus pinea, Pinus cembra, and Pinus cembroides."
     },
     {
@@ -851,7 +851,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "Chocolate wobble and pistachio. - Шоколадное желе и фисташки.",
         "definitions": "A deciduous tree (Pistacia vera) grown in parts of Asia for its drupaceous fruit."
     },
     {
@@ -860,7 +860,7 @@
         "mp3": null,
         "thema": "nuts",
         "partOfSpeech": "noun",
-        "example": "",
+        "example": "The banana bread has walnuts in it. - В банановом хлебе содержатся грецкие орехи.",
         "definitions": "A hardwood tree of the genus Juglans."
     }
 ]

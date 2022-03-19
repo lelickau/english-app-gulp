@@ -1,0 +1,63 @@
+@import '../variables';
+
+.wrapper__words {
+    background-color: $pastel_2;
+    &::after {
+        @include wrapper-top;
+        background-color: $pastel_2;
+    }
+}
+.words {
+
+    &__item {
+        @include box-border-shadow;
+        background-color: $box;
+        padding: 14px 0 50px 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__word {
+        background-color: $pastel_2;
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 26px;
+    }
+
+    &__word + &__word {
+        margin-top: 3px;
+    }
+
+    &__title {
+        @include subtitle-font;
+    }
+
+    &__level {
+        text-align: center;
+        color: $bright_2;
+        margin-bottom: 15px;
+    }
+
+    &__progress{
+        position: relative;
+        width: 16px;
+        height: 16px;
+        background-color: $bright_3;
+        border-radius: 50%;
+        @include box-shadow-svg;
+    }
+
+    &__progress-inside {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: conic-gradient($bright_2 0%, transparent 0);
+        @include box-shadow-svg;
+        right: -6px;
+        top: -6px;
+    }
+}

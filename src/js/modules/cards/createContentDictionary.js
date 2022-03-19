@@ -8,9 +8,12 @@ export const createContentDictionary = (topicData) => {
             <div class="dictionary__item">
                 <div class="dictionary__console">
                     <img class="dictionary__example-img show-example" src="images/question.svg" alt="hint" />
-                    <div class="dictionary__audio ${!topicData[i].mp3 && ' dictionary__audio-null'}" data-audio-src="${topicData[i].mp3}">
-                        <img class="dictionary__audio-img" src="images/audio.svg" alt="audio" />
-                    </div>
+                    ${topicData[i].mp3 ?
+                        `<div class="dictionary__audio" data-audio-src="${topicData[i].mp3}">
+                            <img class="dictionary__audio-img" src="images/audio.svg" alt="audio" />
+                        </div>`
+                    : ''}
+
                 </div>
                 <p class="dictionary__word-box">
                     <span class="dictionary__word">${topicData[i].id}</span> -

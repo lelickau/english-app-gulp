@@ -1,0 +1,34 @@
+- var title = "Future Perfect Continuous";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__tense
+            include html/header
+            main.main
+                .container
+                    section.tense(data-tense-id="futurePerfectContinuous")
+                        button.tense__arrow-prev
+                            img(class="tense__arrow-prev-img", src="@img/arrow-prev.svg", alt="prev")
+                        section.tense__wrapper
+                            .tense__header
+                                .tense__progress
+                                    h4.tense__header-title=title
+                                a(href="grammar.html").tense__header-close
+                                    img(src="@img/close-btn.svg", alt="Close")
+                            article.tense__content
+                                include html/grammar/futurePerfectContinuous/tense-slide-1
+                                include html/grammar/futurePerfectContinuous/tense-slide-2
+                                include html/grammar/futurePerfectContinuous/tense-slide-3
+                                include html/grammar/futurePerfectContinuous/tense-slide-4
+                                include html/grammar/futurePerfectContinuous/tense-slide-5
+
+                                .tense__list-btn
+                                    button.tense__list-done Освоено
+                            .tense__footer
+                        button.tense__arrow-next
+                            img(class="tense__arrow-next-img", src="@img/arrow-next.svg", alt="next")
+            include html/footer

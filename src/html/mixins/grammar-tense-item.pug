@@ -1,6 +1,7 @@
+include ./check.pug
 mixin grammar-list-point(text)
     li.tense__list-point
-        img(class="tense__list-img" src="@img/list-point.svg", alt="+")
+        +check
         p.tense__list-text= text
 
 mixin grammar-list(word, example)

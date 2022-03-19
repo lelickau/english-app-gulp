@@ -1,0 +1,32 @@
+include html/mixins
+- var title = "Создать новый пароль";
+html
+    include html/head
+    body
+        .preloader
+            .preloader__row
+                .preloader__item
+                .preloader__item
+        .wrapper.wrapper__auth
+            include html/header
+            main.main
+                .container
+                    section.auth
+                        article.auth__auth
+                            h1.auth__title Новый пароль
+                            form.auth__recover(action="/recover.php" method="POST" id="recover" novalidate)
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__password(name="password" type="password" placeholder="* Пароль" autocomplete="password")
+                                    span.auth__toggle-pass
+                                        img.auth__show-pass-img(src="@img/show-pass.svg" alt="Show")
+                                        img.auth__hide-pass-img.auth__hidden(src="@img/hide-pass.svg" alt="Hide")
+                                label.auth__label
+                                    span.auth__error-msg
+                                    input.auth__input.auth__repeatPassword(name="repeat_password" type="password" placeholder="* Повторить пароль" autocomplete="password")
+                                    span.auth__toggle-repeat-pass
+                                        img.auth__show-repeat-pass-img(src="@img/show-pass.svg" alt="Show")
+                                        img.auth__hide-repeat-pass-img.auth__hidden(src="@img/hide-pass.svg" alt="Hide")
+                                button.auth__btn(type="submit" name="do_login") Отправить
+                            a.auth__change-create(href="signup.html") Создать аккаунт
+            include html/footer

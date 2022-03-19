@@ -84,6 +84,12 @@ a {
 @import './footer/footer.scss';
 @import './common/hint.scss';
 @import './common/results.scss';
+@import './preloader/preloader.scss';
+// home
+@import './home/home.scss';
+@import './level/level.scss';
+// loader
+@import './loader/loader.scss';
 // auth
 @import './auth/auth.scss';
 // grammar
@@ -99,6 +105,11 @@ a {
 // cards
 @import './cards/cards.scss';
 @import './cards/dictionary.scss';
+// dictionary
+@import './words/words.scss';
+
+//mixins styles
+@import './mixinsStyles/check.scss';
 
 
 @media (max-width: 1024px) {
@@ -110,13 +121,10 @@ a {
 
 @media (max-width: 800px) {
     .main {
-        padding-top: 35px;
+        padding-top: 60px;
     }
 }
 
-
-
-@media (max-height: 720px) {
-
+.error {
+    border: 3px solid $error;
 }
-
