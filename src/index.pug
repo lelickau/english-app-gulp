@@ -14,29 +14,30 @@ html
                     section.home
                         article.home__greeting
                             .home__greeting-item
-                                img.home__greeting-img(src="@img/owl-1.svg" alt="Tom")
-                                p.home__greeting-text Добро пожаловать в мир английского языка, Незнакомец! Здесь ты сможешь получить базовые знания английской грамматики и выучить повседневные слова.
-                            .home__greeting-item
-                                img.home__greeting-img(src="@img/owl-2.svg" alt="Alex")
-                                p.home__greeting-text Ты можешь отслеживать свой прогресс обучения, но для этого тебе нужно зарегестрироваться.
-                    section.level
-                        article.level__item-content
-                            h1.level__login User
-                            h2.level__quality Мастер
-                            .level__words.level__all-words Словарь:
-                                span.level__points 120
-                            .level__words.level__learned-words Выучено слов:
-                                span.level__points 80
-                            .level__words.level__process-words Слова в процессе:
-                                span.level__points 40
-                            .level__words.level__all-points Всего очков опыта:
-                                span.level__points 100000
-                        article.level__item-scale
-                            .level__level
-                                .level__level-points 100
-                            .level__scale
-                                .level__line
-                        a.level__dictionary-btn(href="/dictionary.html") Мой словарь
+                                .home__greeting-img-box
+                                    p.home__greeting-text Добро пожаловать в мир английского языка, Незнакомец! Здесь ты сможешь получить базовые знания английской грамматики и выучить повседневные слова. Ты можешь отслеживать свой прогресс обучения, но для этого тебе нужно зарегестрироваться.
+                                    img.home__greeting-img(src="@img/owl.svg" alt="Tom")
+                                    a.home__login-btn(href="#") Войти
+
+
+                    //- section.level
+                    //-     article.level__item-content
+                    //-         h1.level__login User
+                    //-         h2.level__quality Мастер
+                    //-         .level__words.level__all-words Словарь:
+                    //-             span.level__points 120
+                    //-         .level__words.level__learned-words Выучено слов:
+                    //-             span.level__points 80
+                    //-         .level__words.level__process-words Слова в процессе:
+                    //-             span.level__points 40
+                    //-         .level__words.level__all-points Всего очков опыта:
+                    //-             span.level__points 100000
+                    //-     article.level__item-scale
+                    //-         .level__level
+                    //-             .level__level-points 100
+                    //-         .level__scale
+                    //-             .level__line
+                    //-     a.level__dictionary-btn(href="/dictionary.html") Мой словарь
 
 
             include html/footer

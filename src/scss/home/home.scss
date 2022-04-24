@@ -2,49 +2,51 @@
 
 .home {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+
+    &__login-btn {
+        @include default-btn;
+        @include shadow-btn_2;
+        margin: 0 auto;
+        background-color: $bright_2;
+        margin-top: 29px;
+        color: $box;
+        height: fit-content;
+    }
     &__greeting-item {
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
         margin-bottom: 53px;
     }
 
-    &__greeting-item:nth-child(even) {
-        flex-direction: row-reverse;
+    &__greeting-img-box {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        @include box-shadow-svg;
+        background-color: #fff;
+        margin-top: 255px;
     }
 
     &__greeting-img {
-        width: 65px;
+        width: 300px;
+        margin-top: -218px;
     }
 
     &__greeting-text {
-        padding: 32px;
-        border-radius: 8px;
+        width: 427px;
+        padding: 45px;
+        border-radius: 100px;
         background-color: $box;
-        position: relative;
-    }
-
-    &__greeting-item:nth-child(odd)> &__greeting-text {
-        margin-left: 40px;
-    }
-
-    &__greeting-item:nth-child(even)> &__greeting-text {
-        margin-right: 40px;
-    }
-
-    &__greeting-item:nth-child(even)> &__greeting-text::after {
         position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-top: 15px solid transparent;
-        border-left: 25px solid $box;
-        border-bottom: 10px solid transparent;
-        right: -25px;
-        bottom: 25px;
+        top: -250px;
+        left: 70%;
     }
 
-    &__greeting-item:nth-child(odd)> &__greeting-text::after {
+    &__greeting-text::after {
         position: absolute;
         content: '';
         width: 0;
@@ -52,8 +54,9 @@
         border-top: 15px solid transparent;
         border-right: 25px solid $box;
         border-bottom: 10px solid transparent;
-        left: -25px;
+        left: 1px;
         bottom: 25px;
+        transform: rotate(-40deg);
     }
 
     &__auth-link {
@@ -66,73 +69,73 @@
     }
 }
 
+@media (max-width: 1150px) {
+    .home {
+        &__greeting-img-box {
+            margin-right: 307px;
+        }
+    }
+}
 @media (max-width: 1024px) {
     .home {
 
-        &__greeting-item:nth-child(odd)> &__greeting-text {
+        &__greeting-text {
             margin-left: 25px;
         }
 
-        &__greeting-item:nth-child(even)> &__greeting-text {
-            margin-right: 25px;
+    }
+}
+
+@media (max-width: 850px) {
+    .home {
+
+        &__greeting-img-box {
+            margin-right: auto;
+            margin-top: 370px;
+        }
+
+        &__greeting-text {
+            top: -415px;
+            left: 5%;
+        }
+
+        &__greeting-text::after {
+            left: 59px;
+            bottom: -12px;
+            transform: rotate(-57deg);
         }
     }
 }
 
 @media (max-width: 800px) {
     .home {
-
         &__greeting-item {
             margin-bottom: 30px;
         }
     }
-
 }
 
-@media (max-width: 456px) {
+@media (max-width: 520px) {
     .home {
-
+        &__greeting-img-box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
         &__greeting-img {
-            width: 45px;
+            width: 230px;
+            margin-top: 0;
         }
-
         &__greeting-text {
-            padding: 20px;
-        }
-    }
-
-}
-
-@media (max-width: 370px) {
-    .home {
-        &__greeting-img {
-            width: 35px;
-        }
-
-        &__greeting-text {
-            padding: 20px;
-        }
-
-        &__greeting-item:nth-child(even)> &__greeting-text::after {
-            border-left: 18px solid #fff;
-            border-bottom: 3px solid transparent;
-            right: -18px;
-            bottom: 13px;
-        }
-
-        &__greeting-item:nth-child(odd)> &__greeting-text::after {
-            border-right: 18px solid #fff;
-            border-bottom: 3px solid transparent;
-            left: -18px;
-            bottom: 13px;
-        }
-
-        &__greeting-item:nth-child(odd)> &__greeting-text {
-            margin-left: 18px;
-        }
-
-        &__greeting-item:nth-child(even)> &__greeting-text {
-            margin-right: 18px;
+            text-align: center;
+            position: static;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            &::after {
+                border: 0;
+            }
         }
     }
 }
